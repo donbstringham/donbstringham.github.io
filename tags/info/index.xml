@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Info on donbstringham.us</title>
+    <link>http://donbstringham.us/tags/info/</link>
+    <description>Recent content in Info on donbstringham.us</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 07 Apr 2015 14:34:48 -0600</lastBuildDate>
+    <atom:link href="http://donbstringham.us/tags/info/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://donbstringham.us/about/</link>
+      <pubDate>Tue, 07 Apr 2015 14:34:48 -0600</pubDate>
+      
+      <guid>http://donbstringham.us/about/</guid>
+      <description>
+
+&lt;h3 id=&#34;skills:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Skills&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Technical Lead @ ICS and FamilySearch, Intl.&lt;/li&gt;
+&lt;li&gt;Adjunct Professor in CS @ Weber State University.&lt;/li&gt;
+&lt;li&gt;Post-graduate @ Georgia Institute of Technology.&lt;/li&gt;
+&lt;li&gt;Professional PHP Consultant.&lt;/li&gt;
+&lt;li&gt;Professional Web Consultant.&lt;/li&gt;
+&lt;li&gt;Clean Code evangelist.&lt;/li&gt;
+&lt;li&gt;Test-Driven Development evangelist.&lt;/li&gt;
+&lt;li&gt;Domain-Driven Design evangelist.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;short-bio:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Short bio&lt;/h3&gt;
+
+&lt;p&gt;Don B. Stringham is a Technical Developer at ICS and FamilySearch, International.  He started programming in C and Assembly in 1989.  Started coding web applications in PHP in 2007.  He is also a clean code and TDD evangelist.  He likes to be involved in Open Source and Community projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;twitter-timeline&#34; href=&#34;https://twitter.com/donbstringham&#34; data-widget-id=&#34;506291613128089600&#34;&gt;Tweets by @donbstringham&lt;/a&gt;
+&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rdquo;://platform.twitter.com/widgets.js&amp;rdquo;;fjs.parentNode.insertBefore(js,fjs);}}(document,&amp;ldquo;script&amp;rdquo;,&amp;ldquo;twitter-wjs&amp;rdquo;);&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bookshelf</title>
+      <link>http://donbstringham.us/bookshelf/</link>
+      <pubDate>Tue, 07 Apr 2015 14:34:48 -0600</pubDate>
+      
+      <guid>http://donbstringham.us/bookshelf/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Reading is one of the most important activities for successful developers and professionals in general. Finding the right book is not always easy, so I have shared a list of what is on my bookshelf in the hope it can help you find what you are looking for and inspire you to learn something new. ~Rafael Dohms&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div&gt;
+      &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
+        .gr_grid_container {
+          /* customize grid container div here. eg: width: 500px; */
+        }
+
+        .gr_grid_book_container {
+          /* customize book cover container div here */
+          float: left;
+          width: 98px;
+          height: 160px;
+          padding: 0px 0px;
+          overflow: hidden;
+        }
+      &lt;/style&gt;
+&lt;/div&gt;
+      &lt;div id=&#34;gr_grid_widget_1464886518&#34;&gt;
+        &lt;!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work --&gt;
+            &lt;h2&gt;
+      &lt;a style=&#34;text-decoration: none;&#34; href=&#34;https://www.goodreads.com/review/list/7374029-don?shelf=software-engineering&amp;utm_medium=api&amp;utm_source=grid_widget&#34;&gt;Don&#39;s software-engineering Books&lt;/a&gt;
+    &lt;/h2&gt;
+  &lt;div class=&#34;gr_grid_container&#34;&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation&#34; href=&#34;https://www.goodreads.com/book/show/8686650-continuous-delivery&#34;&gt;&lt;img alt=&#34;Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1347640457m/8686650.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Vagrant: Up and Running&#34; href=&#34;https://www.goodreads.com/book/show/17152732-vagrant&#34;&gt;&lt;img alt=&#34;Vagrant: Up and Running&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1356349756m/17152732.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;JavaScript for PHP Developers&#34; href=&#34;https://www.goodreads.com/book/show/13355766-javascript-for-php-developers&#34;&gt;&lt;img alt=&#34;JavaScript for PHP Developers&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1344729047m/13355766.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;In the Plex: How Google Thinks, Works, and Shapes Our Lives&#34; href=&#34;https://www.goodreads.com/book/show/7841446-in-the-plex&#34;&gt;&lt;img alt=&#34;In the Plex: How Google Thinks, Works, and Shapes Our Lives&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1442810207m/7841446.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;I&#39;m Feeling Lucky: The Confessions of Google Employee Number 59&#34; href=&#34;https://www.goodreads.com/book/show/9871673-i-m-feeling-lucky&#34;&gt;&lt;img alt=&#34;I&#39;m Feeling Lucky: The Confessions of Google Employee Number 59&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1438696440m/9871673.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Implementing Domain-Driven Design&#34; href=&#34;https://www.goodreads.com/book/show/15756865-implementing-domain-driven-design&#34;&gt;&lt;img alt=&#34;Implementing Domain-Driven Design&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1342552108m/15756865.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Clean Code: A Handbook of Agile Software Craftsmanship&#34; href=&#34;https://www.goodreads.com/book/show/3735293-clean-code&#34;&gt;&lt;img alt=&#34;Clean Code: A Handbook of Agile Software Craftsmanship&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1436202607m/3735293.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The Pragmatic Programmer: From Journeyman to Master&#34; href=&#34;https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer&#34;&gt;&lt;img alt=&#34;The Pragmatic Programmer: From Journeyman to Master&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1401432508m/4099.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Refactoring: Improving the Design of Existing Code&#34; href=&#34;https://www.goodreads.com/book/show/44936.Refactoring&#34;&gt;&lt;img alt=&#34;Refactoring: Improving the Design of Existing Code&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1386925632m/44936.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Domain-Driven Design: Tackling Complexity in the Heart of Software&#34; href=&#34;https://www.goodreads.com/book/show/179133.Domain_Driven_Design&#34;&gt;&lt;img alt=&#34;Domain-Driven Design: Tackling Complexity in the Heart of Software&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1287493789m/179133.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;br style=&#34;clear: both&#34;/&gt;&lt;br/&gt;&lt;a class=&#34;gr_grid_branding&#34; style=&#34;font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both&#34; href=&#34;https://www.goodreads.com/user/show/7374029-don&#34;&gt;Don&#39;s favorite books »&lt;/a&gt;
+  &lt;noscript&gt;&lt;br/&gt;Share &lt;a href=&#34;http://donbstringham.us/&#34;&gt;book reviews&lt;/a&gt; and ratings with Don, and even join a &lt;a href=&#34;http://donbstringham.us/group&#34;&gt;book club&lt;/a&gt; on Goodreads.&lt;/noscript&gt;
+  &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>http://donbstringham.us/resume/</link>
+      <pubDate>Tue, 07 Apr 2015 14:34:48 -0600</pubDate>
+      
+      <guid>http://donbstringham.us/resume/</guid>
+      <description>
+
+&lt;h2 id=&#34;contact-information:c59a67a3c7bc5faa453847420267045e&#34;&gt;Contact Information&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;donbstringham at gmail dot com&lt;/li&gt;
+&lt;li&gt;@donbstringham&lt;/li&gt;
+&lt;li&gt;+1 (801) 205-3157&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;education:c59a67a3c7bc5faa453847420267045e&#34;&gt;Education&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Years&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Degree - Institute&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2015 - 2017 (expected)&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;MS, CS&lt;/strong&gt;; Georgia Institute of Technology (Atlanta, GA)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1991 - 1994&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;BS, Computer Science&lt;/strong&gt;; Weber State University (Ogden, UT)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1990 - 1991&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;AS, Computer Science&lt;/strong&gt;: Utah Valley University (Orem, UT)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;experience:c59a67a3c7bc5faa453847420267045e&#34;&gt;Experience&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Years&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Company - Position&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2012 - current&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;FamilySearch, Intl.&lt;/strong&gt;; Technical Lead (Riverton, UT)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2005 - 2012&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;FamilySearch, Intl.&lt;/strong&gt;; Senior Software Engineer (Salt Lake City, UT)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1996 - 2005&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;FamilySearch, Intl.&lt;/strong&gt;; Software Engineer (Salt Lake City, UT)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1991 - 1996&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Access Software/Microsoft&lt;/strong&gt;; Software Programmer (Salt Lake City, UT)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;technical-experience:c59a67a3c7bc5faa453847420267045e&#34;&gt;Technical Experience&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Qualifications&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Open Source&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mediawiki, Inc. Wikipedia.; Sublime Text 2 Plugin&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Programming Languages&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;ASM, C, C++, Java, Javascript, PHP, Python&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Markup Languages&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;CSS3, HTML5, JSON, XML, Markdown&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Databases&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;MySQL5, Sqlite, Experience with Oracle and SqlServer.&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Operating Systems&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Linux (Debian, Ubuntu, RHEL, CentOS), Windows &amp;lt;= 7&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;Stacks/Frameworks&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;(M)&lt;strong&gt;L&lt;/strong&gt;AMP, NodeJS, PhalconPHP, Yii, Symphony, Silex&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

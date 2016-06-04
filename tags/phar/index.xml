@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phar on donbstringham.us</title>
+    <link>http://donbstringham.us/tags/phar/</link>
+    <description>Recent content in Phar on donbstringham.us</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 21 Apr 2015 11:10:52 -0700</lastBuildDate>
+    <atom:link href="http://donbstringham.us/tags/phar/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Building a PHAR for a PHP project</title>
+      <link>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</link>
+      <pubDate>Tue, 21 Apr 2015 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Building a PHAR for a PHP project!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Some in the PHP community have said the PHP developers have too much Java envy.  I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it!  One of the practices that  I am glad that is now in PHP is the single PHAR archive for PHP applications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PHAR&#39;s and file path&#39;s</title>
+      <link>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</link>
+      <pubDate>Fri, 17 Apr 2015 21:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Beware a PHAR requires absolute paths!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefully, this post save a PHP developer some time.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

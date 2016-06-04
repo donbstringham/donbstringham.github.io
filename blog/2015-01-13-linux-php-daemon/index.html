@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Better than a crontab!">
+  <meta name="generator" content="Hugo 0.15" />
+
+  <title>Linux PHP Daemon &middot; donbstringham.us</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://donbstringham.us/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://donbstringham.us/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://donbstringham.us/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://donbstringham.us/img/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://donbstringham.us/">&fnof; = &lambda;(x.x + 1)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/bookshelf/"><i class='fa fa-book fa-fw'></i>Bookshelf</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/resume/"><i class='fa fa-newspaper-o fa-fw'></i>Resume</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/tags/"><i class='fa fa-newspaper-o fa-fw'></i>Tags</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/donbstringham" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/donbstringham" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/donbstringham" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/4632794/donbstringham?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Linux PHP Daemon</h1>
+  <h2>Better than a crontab!</h2>
+</div>
+<div class="content">
+  
+
+<p>Better than a crontab!</p>
+
+<p>Many a time have my development team needed to &ldquo;cronify&rdquo; a PHP script for completing
+business logic quietly behind the scenes.  Once the command-line (CLI) version of the
+application was complete they would start creating and managing a crontab.  This
+practice is <strong>NO MORE</strong> for my development teams!</p>
+
+<p>Enter a better way of &ldquo;cronifying&rdquo; or better stated &ldquo;daemonizing&rdquo; a PHP CLI application.
+I have created a sample of &ldquo;daemonizing&rdquo; a PHP CLI application at <a href="https://github.com/donbstringham/php-daemon">https://github.com/donbstringham/php-daemon</a>.
+This example is based on an article by <a href="http://blog.bobbyallen.me/2014/06/02/how-to-create-a-php-linux-daemon-service/">Bobby Allen</a>.
+Follow the directions below and now you have a linux system daemon that is actually a
+PHP command-line application.</p>
+
+<ul>
+<li><a href="https://github.com/donbstringham/php-daemon/blob/master/php-daemon.conf">php-daemon.conf</a> - Place in the directory <code>/etc/init</code>.  On line 9 in use the <strong>full path</strong> to the PHP file.  It is <strong>very</strong> important to use <em>fully qualified paths</em> in both the <a href="http://upstart.ubuntu.com/">Upstart</a> configuration file as well as any script files that <a href="http://upstart.ubuntu.com/">Upstart</a> daemonizes.</li>
+<li><a href="https://github.com/donbstringham/php-daemon/blob/master/php-daemon.php">php-daemon.php</a> - Place in any directory you want.  Remember it to use <em>fully qualified paths</em>.</li>
+</ul>
+
+<p>Use the commands below to start, stop and view the status of the new linux daemon:</p>
+
+<pre><code>sudo status php-daemon
+</code></pre>
+
+<pre><code>sudo start php-daemon
+</code></pre>
+
+<pre><code>sudo stop php-daemon
+</code></pre>
+
+<p><strong>NOTE:</strong> While implementing this on CENTOS/RHEL boxes a few minor changes where needed to get it run in a stable manner.  The main change was to run the daemons under the <code>root</code> user.  Other changes are listed below in the code:</p>
+
+<h5 id="etc-init-php-daemon-conf:1c012054208771314ef31399f2665fcd">/etc/init/php-daemon.conf</h5>
+
+<pre><code class="language-sh">start on startup
+stop on shutdown
+respawn
+
+script
+    echo &quot;DEBUG: `set`&quot; &gt; /root/php-daemon-env.log
+
+    /root/php-daemon
+end script
+</code></pre>
+
+<h5 id="home-stringhamdb-php-daemon:1c012054208771314ef31399f2665fcd">/home/stringhamdb/php-daemon</h5>
+
+<pre><code class="language-php">#!/usr/bin/php
+&lt;?php
+// The worker will execute every X seconds:
+$seconds = 1;
+
+// We work out the micro seconds ready to be used by the 'usleep' function.
+$micro = $seconds * 1000000;
+
+while (true) {
+  // This is the code you want to loop during the service...
+  $fh = fopen('/root/php-daemon.log', 'a') or die('Can not open file');
+  $stringData = 'File updated at: '.time().PHP_EOL;
+  fwrite($fh, $stringData);
+  fclose($fh);
+  // Now before we 'cycle' again, we'll sleep for a bit...
+  usleep($micro);
+}
+</code></pre>
+
+</div>
+
+</div>
+</div>
+<script src="http://donbstringham.us/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

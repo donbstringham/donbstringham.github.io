@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on donbstringham.us</title>
+    <link>http://donbstringham.us/tags/code/</link>
+    <description>Recent content in Code on donbstringham.us</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 21 May 2015 11:10:52 -0700</lastBuildDate>
+    <atom:link href="http://donbstringham.us/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Code Climate</title>
+      <link>http://donbstringham.us/blog/2015-05-21-code-climate/</link>
+      <pubDate>Thu, 21 May 2015 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-05-21-code-climate/</guid>
+      <description>&lt;p&gt;*Make your code &lt;strong&gt;NOT&lt;/strong&gt; suck!*&lt;/p&gt;
+
+&lt;p&gt;I love the idea of automated code reviews!  It makes the development process much faster and allows the engineer to focus more on the business logic.  Which is where his attention should be focused.  Of the few automated code reviews tools I&amp;rsquo;ve used my favorite is &lt;a href=&#34;http://codeclimate.com&#34;&gt;Code Climate&lt;/a&gt;.  There is only one problem I have with Code Climate and that is it&amp;rsquo;s pricing structure.  It is definitely going after the development team or enterprise team audience.  While I am waiting for them to get back to me about student and non-profit plans I have been using PHP Code Sniffer (&lt;em&gt;phpcs&lt;/em&gt;) with &lt;em&gt;php-cs-fixer&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The grading scale and code coverage integration along with the ticket integration are the features that I used consistently.  These things can be done other ways but Code Climate makes it so much easier.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Different Programming Mode</title>
+      <link>http://donbstringham.us/blog/2015-04-23-different-programming-mode/</link>
+      <pubDate>Thu, 23 Apr 2015 15:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-23-different-programming-mode/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Programming is more than just writing code&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Many people, including developers, believe that the activity of programming is just writing code.  They are either ignorant because they don&amp;rsquo;t develop or do not pay attention while they develop.  Programming can be divided into a few activities that have very different mind-sets and this isn&amp;rsquo;t just my experience it also accords with Martin Fowler.&lt;/p&gt;
+
+&lt;p&gt;The most popular activity is adding new features.  It is the one that most people relate to as the &lt;em&gt;only&lt;/em&gt; activity of software development.  The others are &lt;a href=&#34;https://youtu.be/vqEg37e4Mkw&#34;&gt;refactoring&lt;/a&gt;, debugging, research and development, performance improvement just to name a few.&lt;/p&gt;
+
+&lt;p&gt;When refactoring your mind-set should be &amp;ldquo;I should never change the behavior of the code&amp;rdquo;.  When adding features the mind-set is &amp;ldquo;I am changing and/or adding new behavior to the code&amp;rdquo;.  These two mind-sets have a different feel or rhythm as Martin Fowler describes it.&lt;/p&gt;
+
+&lt;p&gt;Based on this then developers should have a quiet area in which to work.  Making the transition between the modes much easier.  A great article about it is &lt;a href=&#34;http://www.joelonsoftware.com/articles/FieldGuidetoDevelopers.html&#34;&gt;A Field Guide to Developers&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building a PHAR for a PHP project</title>
+      <link>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</link>
+      <pubDate>Tue, 21 Apr 2015 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Building a PHAR for a PHP project!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Some in the PHP community have said the PHP developers have too much Java envy.  I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it!  One of the practices that  I am glad that is now in PHP is the single PHAR archive for PHP applications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PHAR&#39;s and file path&#39;s</title>
+      <link>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</link>
+      <pubDate>Fri, 17 Apr 2015 21:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Beware a PHAR requires absolute paths!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Hopefully, this post save a PHP developer some time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Refactoring to Microservices</title>
+      <link>http://donbstringham.us/blog/2015-04-17-refactoring-to-microservices/</link>
+      <pubDate>Fri, 17 Apr 2015 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-17-refactoring-to-microservices/</guid>
+      <description>&lt;p&gt;&lt;em&gt;EMRIS a perfect fit for Microservices&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Microservices, a new old flavor of the the month?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Semantic Versioning</title>
+      <link>http://donbstringham.us/blog/2014-12-08-semantic-versioning/</link>
+      <pubDate>Mon, 08 Dec 2014 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2014-12-08-semantic-versioning/</guid>
+      <description>&lt;p&gt;We should all be using &lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;During this November I attended the &lt;a href=&#34;http://world.phparch.com/&#34;&gt;PHP[WORLD] 2014&lt;/a&gt; conference in Washington, D.C.  To say
+that it was a beneficial conference would be an understatement. It seemed that valuable information was being shared at
+every corner.  One of those gems is &lt;a href=&#34;http://semver.org/&#34;&gt;semantic versioning&lt;/a&gt;.  This topic came up during a session on
+how to use &lt;a href=&#34;https://joind.in/talk/view/11878&#34;&gt;PHP Composer&lt;/a&gt; by Rafael Dohms.&lt;/p&gt;
+
+&lt;p&gt;Semantic versioning uses the familiar format &lt;em&gt;xx.yy.zz&lt;/em&gt;.  The &lt;em&gt;xx&lt;/em&gt;&amp;rsquo;s relate to the MAJOR version and are
+incremented when an incompatible API change is made.  The &lt;em&gt;yy&lt;/em&gt;&amp;rsquo;s relate to the MINOR version and are incremented when
+backwards compatible new functionality is added.  Finally, the &lt;em&gt;zz&lt;/em&gt;&amp;rsquo;s relate to a PATCH version and are incremented for
+backwards compatible bug-fixes.  So semantic versioning brings meaning to the version numbers we all see and are very
+familiar with (MAJOR.MINOR.PATCH)&lt;/p&gt;
+
+&lt;p&gt;Why use any type of version numbering system anyways?  A question many good developers never even ask.  In my
+22+ years of developing software one constant is growing dependencies.  Dependencies growth patterns are much like the
+patterns followed by weeds.  They show up every and any where without rhyme or reason.  If you have ever lived in this
+space you have known &amp;ldquo;dependency hell&amp;rdquo;.  The sad truth is that it exists in every technology system.  In an attempt to
+place some organization on the craziness of dependency growth versioning was introduced.  Quoted below is an example
+of easy this can be.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A simple example will demonstrate how Semantic Versioning can make dependency hell a thing of the past. Consider a library called &amp;ldquo;Firetruck.&amp;rdquo; It requires a Semantically Versioned package named &amp;ldquo;Ladder.&amp;rdquo; At the time that Firetruck is created, Ladder is at version 3.1.0. Since Firetruck uses some functionality that was first introduced in 3.1.0, you can safely specify the Ladder dependency as greater than or equal to 3.1.0 but less than 4.0.0. Now, when Ladder version 3.1.1 and 3.2.0 become available, you can release them to your package management system and know that they will be compatible with existing dependent software.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; How do I start versioning?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A:&lt;/em&gt; Start with 0.1.0&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; How do I know when we are ready for 1.0.0?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A:&lt;/em&gt; Answer &amp;ldquo;yes&amp;rdquo; to these two questions, then you should be at 1.0.0.  1.) Is the software in production? 2.) Do you
+have a stable API upon which users depend on.  If the you answered &amp;ldquo;no&amp;rdquo; to either question then stay with 0.x.z.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## EXAMPLES
+
+ 2.0.1
+v2.0.0        ## &#39;v&#39; is a prefix.
+v2.0.0-rc.1   ## &#39;-rc.1&#39; is a postfix. rc=release candidate
+v1.0.1-beta   ## &#39;-beta&#39; is a post fix.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please spend some time reading through the Semantic Versioning Specification at &lt;a href=&#34;http://semver.org&#34;&gt;http://semver.org&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

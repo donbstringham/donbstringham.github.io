@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://donbstringham.us/</loc>
+    <lastmod>2016-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/contact/</loc>
+    <lastmod>2016-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-05-21-code-climate/</loc>
+    <lastmod>2015-05-21T11:10:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-04-23-different-programming-mode/</loc>
+    <lastmod>2015-04-23T15:10:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-04-22-install-oracle-php-pdo-driver/</loc>
+    <lastmod>2015-04-22T11:10:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</loc>
+    <lastmod>2015-04-21T11:10:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</loc>
+    <lastmod>2015-04-17T21:10:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-04-17-refactoring-to-microservices/</loc>
+    <lastmod>2015-04-17T11:10:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/about/</loc>
+    <lastmod>2015-04-07T14:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/bookshelf/</loc>
+    <lastmod>2015-04-07T14:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/resume/</loc>
+    <lastmod>2015-04-07T14:34:48-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-03-30-composer-autoloading/</loc>
+    <lastmod>2015-03-30T09:05:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-03-12-implementing-satis/</loc>
+    <lastmod>2015-03-12T09:05:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-03-09-optimizing-the-realpath_cache/</loc>
+    <lastmod>2015-03-09T09:05:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-03-06-html-signatures-in-apple-mail/</loc>
+    <lastmod>2015-03-06T17:50:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2015-01-13-linux-php-daemon/</loc>
+    <lastmod>2015-01-13T17:50:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2014-12-23-service-locator-vs.-dependency-injection-container/</loc>
+    <lastmod>2014-12-23T22:47:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2014-12-17-personal-cdn-for-free/</loc>
+    <lastmod>2014-12-17T16:56:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</loc>
+    <lastmod>2014-12-11T12:52:29-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/blog/2014-12-08-semantic-versioning/</loc>
+    <lastmod>2014-12-08T11:10:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://donbstringham.us/license/</loc>
+  </url>
+  
+</urlset>

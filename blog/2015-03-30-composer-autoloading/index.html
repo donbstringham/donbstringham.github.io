@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Composer Autoloading Not Just for Vendor Files">
+  <meta name="generator" content="Hugo 0.15" />
+
+  <title>Composer Autoloading &middot; donbstringham.us</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://donbstringham.us/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://donbstringham.us/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://donbstringham.us/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://donbstringham.us/img/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://donbstringham.us/">&fnof; = &lambda;(x.x + 1)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/bookshelf/"><i class='fa fa-book fa-fw'></i>Bookshelf</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/resume/"><i class='fa fa-newspaper-o fa-fw'></i>Resume</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/tags/"><i class='fa fa-newspaper-o fa-fw'></i>Tags</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/donbstringham" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/donbstringham" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/donbstringham" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://stackoverflow.com/users/4632794/donbstringham?tab=profile" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i>Stack Overflow</a>
+    </li>
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Composer Autoloading</h1>
+  <h2>Composer Autoloading Not Just for Vendor Files</h2>
+</div>
+<div class="content">
+  <p>*Composer <strong>Autoloading</strong> Not Just for Vendor Files*</p>
+
+<p>Teacher can and should learn from students!  That is one of the things I find very satisfying about being an adjunct professor at Weber State University.  The fact that I can learn new and usual things from those I teach.  Last night was one of those times.</p>
+
+<p>In fielding questions about a PHP project a comment came up about multiple autoloaders.  In the first project I had the students create their own autoloader.  This project I required them to use composer to manage and load dependencies.  One student mentioned he had found how to use the composer autoloader to load his classes.  Now I had known in the past that composer supported <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md">PSR-0</a> but didn&rsquo;t fully understand it.    So to my surprise I learned that composer now supports <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md">PSR-4</a> and is very easy to use.  Here is a code snippet of the a portion of the <code>composer.json</code> file:</p>
+
+<pre><code>&quot;autoload&quot;: {
+	&quot;psr-4&quot;: {
+		&quot;Common\\&quot;: &quot;src/Common/&quot;,
+        &quot;Domain\\&quot;: &quot;src/Domain/&quot;
+   }
+}
+</code></pre>
+
+<p>Then to use the autoloader and namespaces in code you would use a PHP statement like this:</p>
+
+<pre><code class="language-php">require_once __DIR__.'/vendor/autoload.php';
+</code></pre>
+
+<p>To optimized the autoloader you can use this command: <code>composer dumpautoload -o</code>.  There is a downside to this, though.  You will need to re-run this every time a new class is added, in addition to whenever the composer <code>install</code> or <code>update</code> commands are used.  Needless to say this is a small price to pay for roughly a 40% performance increase.</p>
+
+<p>This is another great usage of composer.  A tool PHP developers should be using a lot more.</p>
+
+<ul>
+<li><a href="https://getcomposer.org/doc/04-schema.md">Composer JSON Schema</a></li>
+<li><a href="http://jessesnet.com/development-notes/2014/php-composer-autoloading/">PHP Composer Autoloading</a></li>
+<li><a href="http://mouf-php.com/optimizing-composer-autoloader-performance">Optimizing Composer&rsquo;s autoloader performance</a></li>
+</ul>
+
+</div>
+
+</div>
+</div>
+<script src="http://donbstringham.us/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+

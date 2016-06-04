@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tagging on donbstringham.us</title>
+    <link>http://donbstringham.us/tags/tagging/</link>
+    <description>Recent content in Tagging on donbstringham.us</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 17 Apr 2015 11:10:52 -0700</lastBuildDate>
+    <atom:link href="http://donbstringham.us/tags/tagging/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Refactoring to Microservices</title>
+      <link>http://donbstringham.us/blog/2015-04-17-refactoring-to-microservices/</link>
+      <pubDate>Fri, 17 Apr 2015 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-17-refactoring-to-microservices/</guid>
+      <description>&lt;p&gt;&lt;em&gt;EMRIS a perfect fit for Microservices&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Microservices, a new old flavor of the the month?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Semantic Versioning</title>
+      <link>http://donbstringham.us/blog/2014-12-08-semantic-versioning/</link>
+      <pubDate>Mon, 08 Dec 2014 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2014-12-08-semantic-versioning/</guid>
+      <description>&lt;p&gt;We should all be using &lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;During this November I attended the &lt;a href=&#34;http://world.phparch.com/&#34;&gt;PHP[WORLD] 2014&lt;/a&gt; conference in Washington, D.C.  To say
+that it was a beneficial conference would be an understatement. It seemed that valuable information was being shared at
+every corner.  One of those gems is &lt;a href=&#34;http://semver.org/&#34;&gt;semantic versioning&lt;/a&gt;.  This topic came up during a session on
+how to use &lt;a href=&#34;https://joind.in/talk/view/11878&#34;&gt;PHP Composer&lt;/a&gt; by Rafael Dohms.&lt;/p&gt;
+
+&lt;p&gt;Semantic versioning uses the familiar format &lt;em&gt;xx.yy.zz&lt;/em&gt;.  The &lt;em&gt;xx&lt;/em&gt;&amp;rsquo;s relate to the MAJOR version and are
+incremented when an incompatible API change is made.  The &lt;em&gt;yy&lt;/em&gt;&amp;rsquo;s relate to the MINOR version and are incremented when
+backwards compatible new functionality is added.  Finally, the &lt;em&gt;zz&lt;/em&gt;&amp;rsquo;s relate to a PATCH version and are incremented for
+backwards compatible bug-fixes.  So semantic versioning brings meaning to the version numbers we all see and are very
+familiar with (MAJOR.MINOR.PATCH)&lt;/p&gt;
+
+&lt;p&gt;Why use any type of version numbering system anyways?  A question many good developers never even ask.  In my
+22+ years of developing software one constant is growing dependencies.  Dependencies growth patterns are much like the
+patterns followed by weeds.  They show up every and any where without rhyme or reason.  If you have ever lived in this
+space you have known &amp;ldquo;dependency hell&amp;rdquo;.  The sad truth is that it exists in every technology system.  In an attempt to
+place some organization on the craziness of dependency growth versioning was introduced.  Quoted below is an example
+of easy this can be.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A simple example will demonstrate how Semantic Versioning can make dependency hell a thing of the past. Consider a library called &amp;ldquo;Firetruck.&amp;rdquo; It requires a Semantically Versioned package named &amp;ldquo;Ladder.&amp;rdquo; At the time that Firetruck is created, Ladder is at version 3.1.0. Since Firetruck uses some functionality that was first introduced in 3.1.0, you can safely specify the Ladder dependency as greater than or equal to 3.1.0 but less than 4.0.0. Now, when Ladder version 3.1.1 and 3.2.0 become available, you can release them to your package management system and know that they will be compatible with existing dependent software.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; How do I start versioning?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A:&lt;/em&gt; Start with 0.1.0&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; How do I know when we are ready for 1.0.0?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A:&lt;/em&gt; Answer &amp;ldquo;yes&amp;rdquo; to these two questions, then you should be at 1.0.0.  1.) Is the software in production? 2.) Do you
+have a stable API upon which users depend on.  If the you answered &amp;ldquo;no&amp;rdquo; to either question then stay with 0.x.z.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## EXAMPLES
+
+ 2.0.1
+v2.0.0        ## &#39;v&#39; is a prefix.
+v2.0.0-rc.1   ## &#39;-rc.1&#39; is a postfix. rc=release candidate
+v1.0.1-beta   ## &#39;-beta&#39; is a post fix.
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please spend some time reading through the Semantic Versioning Specification at &lt;a href=&#34;http://semver.org&#34;&gt;http://semver.org&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

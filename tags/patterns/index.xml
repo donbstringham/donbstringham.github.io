@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patterns on donbstringham.us</title>
+    <link>http://donbstringham.us/tags/patterns/</link>
+    <description>Recent content in Patterns on donbstringham.us</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 23 Dec 2014 22:47:30 -0700</lastBuildDate>
+    <atom:link href="http://donbstringham.us/tags/patterns/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Service Locator vs. Dependency Injection Container</title>
+      <link>http://donbstringham.us/blog/2014-12-23-service-locator-vs.-dependency-injection-container/</link>
+      <pubDate>Tue, 23 Dec 2014 22:47:30 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2014-12-23-service-locator-vs.-dependency-injection-container/</guid>
+      <description>&lt;p&gt;I am &lt;strong&gt;NOT&lt;/strong&gt; as crazy as I thought!&lt;/p&gt;
+
+&lt;p&gt;Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about &lt;a href=&#34;http://fabien.potencier.org/article/11/what-is-dependency-injection&#34;&gt;dependency injection&lt;/a&gt; altogether.  Years ago I learned from &lt;a href=&#34;http://misko.hevery.com/&#34;&gt;Misko Hevery&lt;/a&gt; from Google that a service locator is really just global state or a bad singleton in sheep&amp;rsquo;s clothing.  He states that a service locator violates the &lt;a href=&#34;http://en.wikipedia.org/wiki/Law_of_Demeter&#34;&gt;Law of Demeter&lt;/a&gt; and calls singletons are pathological liars.&lt;/p&gt;
+
+&lt;p&gt;Needless to say I have developed a bad taste for singletons and service locators.  So when I saw that many PHP projects had dependency injection containers (DIC) that were used as a service locator I became sick.  I discussed the issues with many PHP developers who didn&amp;rsquo;t seem to understand the negative issues that dependency injection containers create for testing and loosely-coupling.  That is when the second guessing started.  So I did some research on the internet and found only two others that felt the way I did.  Here are their links:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://adamcod.es/2013/11/25/service-locator-vs-dependency-injection-container.html&#34;&gt;Service Locator vs Dependency Injection Container (or Tell, Don&amp;rsquo;t Ask Part 2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gnugat.github.io/2014/01/22/ioc-di-and-service-locator.html&#34;&gt;Inversion of Control, Dependency Injection, Dependency Injection Container and Service Locator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Basically, in my opinion, a service locator and dependency injection container are for all intents and purposes identical.  The difference is in how they are used.  Typically, a service locator is passed into a class which then asks the locator for a dependency.  A dependency injection container is used to get the dependencies and then pass them into the class that will use them.  Essentially, this is a similar view point that Adam Brett holds.  Read his article for code examples of both a service locator and dependency injection container.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DDD in PHP Experiment</title>
+      <link>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</link>
+      <pubDate>Thu, 11 Dec 2014 12:52:29 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</guid>
+      <description>&lt;p&gt;Domain-Driven Design in PHP Experiment and Project Seed&lt;/p&gt;
+
+&lt;p&gt;A current and difficult software development project has recently sent me scurrying for answers.  In that search I&amp;rsquo;ve rediscovered the book &lt;a href=&#34;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&amp;amp;qid=1418357436&amp;amp;sr=8-1&amp;amp;keywords=domain+driven+design&#34;&gt;Domain-Driven Design: Tackling Complexity in the Heart of Software&lt;/a&gt; by Eric Evans.  In addition to re-reading the book and reviewing a handful of slide-decks at &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;SlideShare&lt;/a&gt;; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.  So I have started a &lt;a href=&#34;https://github.com/stringhamdb/d3x&#34;&gt;Github project&lt;/a&gt; to test out the implementation differences.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;First, I am looking at the differences in the persistence and database access (DBAL) components in the infrastructure layer.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For example one question that needs to be answered is should a DataMapper reside in the Domain or Infrastructure layer.&lt;/li&gt;
+&lt;li&gt;Another is should the DataMapper be implemented following the pattern religiously or with application specific variations.&lt;/li&gt;
+&lt;li&gt;Is it really a DataMapper or is it better called a DomainMapper that then uses TableDataGateways and RowDataGateways to read from persistence storage?&lt;/li&gt;
+&lt;li&gt;Is there a DataMapper class in the infrastructure layer that communicates with the DomainMapper in the domain layer?  That these two objects can pull from multiple tables using SQL and create a single entity or a single aggregate entity.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Second, I am looking at the differences in how domain classes versus infrastructure classes are constructed via factories.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Which factory pattern is a best practice?&lt;/li&gt;
+&lt;li&gt;If the factory method pattern is the best practice should it be implemented religiously or with variations?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Thirdly, where can I use things like &lt;code&gt;memcached&lt;/code&gt; or an op-code cache to improve the performance of large data sets.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data sets such as a repository might easily grow beyond a thousand aggregate  root entities with maybe over tens times that in regular entities.&lt;/li&gt;
+&lt;li&gt;Large data sets could easily cause the database syndrome known as &amp;lsquo;death by a thousand cuts&amp;rsquo; meaning that a repository during a load process could easily ask the infrastructure layer to make a lot of database calls bringing the server to it&amp;rsquo;s knees.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anyways, it should turn into a great learning experience.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

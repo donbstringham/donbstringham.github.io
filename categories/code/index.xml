@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on donbstringham.us</title>
+    <link>http://donbstringham.us/categories/code/</link>
+    <description>Recent content in Code on donbstringham.us</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 21 May 2015 11:10:52 -0700</lastBuildDate>
+    <atom:link href="http://donbstringham.us/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Code Climate</title>
+      <link>http://donbstringham.us/blog/2015-05-21-code-climate/</link>
+      <pubDate>Thu, 21 May 2015 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-05-21-code-climate/</guid>
+      <description>&lt;p&gt;*Make your code &lt;strong&gt;NOT&lt;/strong&gt; suck!*&lt;/p&gt;
+
+&lt;p&gt;I love the idea of automated code reviews!  It makes the development process much faster and allows the engineer to focus more on the business logic.  Which is where his attention should be focused.  Of the few automated code reviews tools I&amp;rsquo;ve used my favorite is &lt;a href=&#34;http://codeclimate.com&#34;&gt;Code Climate&lt;/a&gt;.  There is only one problem I have with Code Climate and that is it&amp;rsquo;s pricing structure.  It is definitely going after the development team or enterprise team audience.  While I am waiting for them to get back to me about student and non-profit plans I have been using PHP Code Sniffer (&lt;em&gt;phpcs&lt;/em&gt;) with &lt;em&gt;php-cs-fixer&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The grading scale and code coverage integration along with the ticket integration are the features that I used consistently.  These things can be done other ways but Code Climate makes it so much easier.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Different Programming Mode</title>
+      <link>http://donbstringham.us/blog/2015-04-23-different-programming-mode/</link>
+      <pubDate>Thu, 23 Apr 2015 15:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2015-04-23-different-programming-mode/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Programming is more than just writing code&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Many people, including developers, believe that the activity of programming is just writing code.  They are either ignorant because they don&amp;rsquo;t develop or do not pay attention while they develop.  Programming can be divided into a few activities that have very different mind-sets and this isn&amp;rsquo;t just my experience it also accords with Martin Fowler.&lt;/p&gt;
+
+&lt;p&gt;The most popular activity is adding new features.  It is the one that most people relate to as the &lt;em&gt;only&lt;/em&gt; activity of software development.  The others are &lt;a href=&#34;https://youtu.be/vqEg37e4Mkw&#34;&gt;refactoring&lt;/a&gt;, debugging, research and development, performance improvement just to name a few.&lt;/p&gt;
+
+&lt;p&gt;When refactoring your mind-set should be &amp;ldquo;I should never change the behavior of the code&amp;rdquo;.  When adding features the mind-set is &amp;ldquo;I am changing and/or adding new behavior to the code&amp;rdquo;.  These two mind-sets have a different feel or rhythm as Martin Fowler describes it.&lt;/p&gt;
+
+&lt;p&gt;Based on this then developers should have a quiet area in which to work.  Making the transition between the modes much easier.  A great article about it is &lt;a href=&#34;http://www.joelonsoftware.com/articles/FieldGuidetoDevelopers.html&#34;&gt;A Field Guide to Developers&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
