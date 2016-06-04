@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Info on donbstringham.us</title>
+    <title>Info on donbstringham</title>
     <link>http://donbstringham.us/tags/info/</link>
-    <description>Recent content in Info on donbstringham.us</description>
+    <description>Recent content in Info on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
@@ -35,7 +35,7 @@
 
 &lt;h3 id=&#34;short-bio:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Short bio&lt;/h3&gt;
 
-&lt;p&gt;Don B. Stringham is a Technical Developer at ICS and FamilySearch, International.  He started programming in C and Assembly in 1989.  Started coding web applications in PHP in 2007.  He is also a clean code and TDD evangelist.  He likes to be involved in Open Source and Community projects.&lt;/p&gt;
+&lt;p&gt;Don B. Stringham is a Technical Lead at ICS and FamilySearch, International.  He started programming in C and Assembly in 1989.  Started coding web applications in PHP in 2007.  He is also a clean code and TDD evangelist.  He likes to be involved in Open Source and Community projects.&lt;/p&gt;
 
 &lt;p&gt;&lt;a class=&#34;twitter-timeline&#34; href=&#34;https://twitter.com/donbstringham&#34; data-widget-id=&#34;506291613128089600&#34;&gt;Tweets by @donbstringham&lt;/a&gt;
 &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rdquo;://platform.twitter.com/widgets.js&amp;rdquo;;fjs.parentNode.insertBefore(js,fjs);}}(document,&amp;ldquo;script&amp;rdquo;,&amp;ldquo;twitter-wjs&amp;rdquo;);&lt;/script&gt;&lt;/p&gt;
