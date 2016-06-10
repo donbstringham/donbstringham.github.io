@@ -7,8 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 21 May 2015 11:10:52 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jun 2016 19:35:16 -0600</lastBuildDate>
     <atom:link href="http://donbstringham.us/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Development With Docker</title>
+      <link>http://donbstringham.us/blog/2016-06-05-development-with-docker/</link>
+      <pubDate>Sun, 05 Jun 2016 19:35:16 -0600</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2016-06-05-development-with-docker/</guid>
+      <description>&lt;p&gt;Iaculis pellentesque. Aenean accumsan elit sit amet nibh feugiat semper. Cras
+tempor ornare purus. Integer id nisi. Phasellus dui velit, ultrices vel,
+ullamcorper mattis, hendrerit in, erat. Aenean vel quam at eros mattis commodo.
+Aenean feugiat iaculis justo. Maecenas accumsan justo ut nibh. Donec ac lectus
+vitae odio lobortis tristique. Donec vestibulum mattis lectus. Donec et lorem.&lt;/p&gt;
+
+&lt;p&gt;Cras sit amet mauris. Curabitur a quam. Aliquam neque. Nam nunc nunc, lacinia
+sed, varius quis, iaculis eget, ante. Nulla dictum justo eu lacus. Phasellus
+sit amet quam. Nullam sodales. Cras non magna eu est consectetuer faucibus.
+Donec tempor lobortis turpis. Sed tellus velit, ullamcorper.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Code Climate</title>
@@ -316,7 +335,7 @@ PHP command-line application.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While implementing this on CENTOS/RHEL boxes a few minor changes where needed to get it run in a stable manner.  The main change was to run the daemons under the &lt;code&gt;root&lt;/code&gt; user.  Other changes are listed below in the code:&lt;/p&gt;
 
-&lt;h5 id=&#34;etc-init-php-daemon-conf:1c012054208771314ef31399f2665fcd&#34;&gt;/etc/init/php-daemon.conf&lt;/h5&gt;
+&lt;h5 id=&#34;etc-init-php-daemon-conf&#34;&gt;/etc/init/php-daemon.conf&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;start on startup
 stop on shutdown
@@ -329,7 +348,7 @@ script
 end script
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;home-stringhamdb-php-daemon:1c012054208771314ef31399f2665fcd&#34;&gt;/home/stringhamdb/php-daemon&lt;/h5&gt;
+&lt;h5 id=&#34;home-stringhamdb-php-daemon&#34;&gt;/home/stringhamdb/php-daemon&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;#!/usr/bin/php
 &amp;lt;?php
@@ -454,58 +473,6 @@ static content on a couple of personal websites as well as fonts and images for 
 &lt;/ul&gt;
 
 &lt;p&gt;Anyways, it should turn into a great learning experience.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Semantic Versioning</title>
-      <link>http://donbstringham.us/blog/2014-12-08-semantic-versioning/</link>
-      <pubDate>Mon, 08 Dec 2014 11:10:52 -0700</pubDate>
-      
-      <guid>http://donbstringham.us/blog/2014-12-08-semantic-versioning/</guid>
-      <description>&lt;p&gt;We should all be using &lt;a href=&#34;http://semver.org/&#34;&gt;Semantic Versioning&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;During this November I attended the &lt;a href=&#34;http://world.phparch.com/&#34;&gt;PHP[WORLD] 2014&lt;/a&gt; conference in Washington, D.C.  To say
-that it was a beneficial conference would be an understatement. It seemed that valuable information was being shared at
-every corner.  One of those gems is &lt;a href=&#34;http://semver.org/&#34;&gt;semantic versioning&lt;/a&gt;.  This topic came up during a session on
-how to use &lt;a href=&#34;https://joind.in/talk/view/11878&#34;&gt;PHP Composer&lt;/a&gt; by Rafael Dohms.&lt;/p&gt;
-
-&lt;p&gt;Semantic versioning uses the familiar format &lt;em&gt;xx.yy.zz&lt;/em&gt;.  The &lt;em&gt;xx&lt;/em&gt;&amp;rsquo;s relate to the MAJOR version and are
-incremented when an incompatible API change is made.  The &lt;em&gt;yy&lt;/em&gt;&amp;rsquo;s relate to the MINOR version and are incremented when
-backwards compatible new functionality is added.  Finally, the &lt;em&gt;zz&lt;/em&gt;&amp;rsquo;s relate to a PATCH version and are incremented for
-backwards compatible bug-fixes.  So semantic versioning brings meaning to the version numbers we all see and are very
-familiar with (MAJOR.MINOR.PATCH)&lt;/p&gt;
-
-&lt;p&gt;Why use any type of version numbering system anyways?  A question many good developers never even ask.  In my
-22+ years of developing software one constant is growing dependencies.  Dependencies growth patterns are much like the
-patterns followed by weeds.  They show up every and any where without rhyme or reason.  If you have ever lived in this
-space you have known &amp;ldquo;dependency hell&amp;rdquo;.  The sad truth is that it exists in every technology system.  In an attempt to
-place some organization on the craziness of dependency growth versioning was introduced.  Quoted below is an example
-of easy this can be.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A simple example will demonstrate how Semantic Versioning can make dependency hell a thing of the past. Consider a library called &amp;ldquo;Firetruck.&amp;rdquo; It requires a Semantically Versioned package named &amp;ldquo;Ladder.&amp;rdquo; At the time that Firetruck is created, Ladder is at version 3.1.0. Since Firetruck uses some functionality that was first introduced in 3.1.0, you can safely specify the Ladder dependency as greater than or equal to 3.1.0 but less than 4.0.0. Now, when Ladder version 3.1.1 and 3.2.0 become available, you can release them to your package management system and know that they will be compatible with existing dependent software.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; How do I start versioning?&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;A:&lt;/em&gt; Start with 0.1.0&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Q:&lt;/em&gt; How do I know when we are ready for 1.0.0?&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;A:&lt;/em&gt; Answer &amp;ldquo;yes&amp;rdquo; to these two questions, then you should be at 1.0.0.  1.) Is the software in production? 2.) Do you
-have a stable API upon which users depend on.  If the you answered &amp;ldquo;no&amp;rdquo; to either question then stay with 0.x.z.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;## EXAMPLES
-
- 2.0.1
-v2.0.0        ## &#39;v&#39; is a prefix.
-v2.0.0-rc.1   ## &#39;-rc.1&#39; is a postfix. rc=release candidate
-v1.0.1-beta   ## &#39;-beta&#39; is a post fix.
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Please spend some time reading through the Semantic Versioning Specification at &lt;a href=&#34;http://semver.org&#34;&gt;http://semver.org&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

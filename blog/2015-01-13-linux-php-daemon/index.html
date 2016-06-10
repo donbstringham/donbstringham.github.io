@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Better than a crontab!">
-  <meta name="generator" content="Hugo 0.15" />
+  <meta name="generator" content="Hugo 0.16" />
 
   <title>Linux PHP Daemon &middot; donbstringham</title>
 
@@ -60,7 +60,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="http://donbstringham.us/">&fnof; = &lambda;(x.x + 1)</a>
+  <a class="pure-menu-heading brand" href="http://donbstringham.us/">&fnof; = &lambda; + OOP</a>
 
 
   <div class="pure-menu">
@@ -236,7 +236,7 @@ PHP command-line application.</p>
 
 <p><strong>NOTE:</strong> While implementing this on CENTOS/RHEL boxes a few minor changes where needed to get it run in a stable manner.  The main change was to run the daemons under the <code>root</code> user.  Other changes are listed below in the code:</p>
 
-<h5 id="etc-init-php-daemon-conf:1c012054208771314ef31399f2665fcd">/etc/init/php-daemon.conf</h5>
+<h5 id="etc-init-php-daemon-conf">/etc/init/php-daemon.conf</h5>
 
 <pre><code class="language-sh">start on startup
 stop on shutdown
@@ -249,7 +249,7 @@ script
 end script
 </code></pre>
 
-<h5 id="home-stringhamdb-php-daemon:1c012054208771314ef31399f2665fcd">/home/stringhamdb/php-daemon</h5>
+<h5 id="home-stringhamdb-php-daemon">/home/stringhamdb/php-daemon</h5>
 
 <pre><code class="language-php">#!/usr/bin/php
 &lt;?php

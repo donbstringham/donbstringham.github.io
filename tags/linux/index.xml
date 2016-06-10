@@ -49,7 +49,7 @@ PHP command-line application.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While implementing this on CENTOS/RHEL boxes a few minor changes where needed to get it run in a stable manner.  The main change was to run the daemons under the &lt;code&gt;root&lt;/code&gt; user.  Other changes are listed below in the code:&lt;/p&gt;
 
-&lt;h5 id=&#34;etc-init-php-daemon-conf:1c012054208771314ef31399f2665fcd&#34;&gt;/etc/init/php-daemon.conf&lt;/h5&gt;
+&lt;h5 id=&#34;etc-init-php-daemon-conf&#34;&gt;/etc/init/php-daemon.conf&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;start on startup
 stop on shutdown
@@ -62,7 +62,7 @@ script
 end script
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;home-stringhamdb-php-daemon:1c012054208771314ef31399f2665fcd&#34;&gt;/home/stringhamdb/php-daemon&lt;/h5&gt;
+&lt;h5 id=&#34;home-stringhamdb-php-daemon&#34;&gt;/home/stringhamdb/php-daemon&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;#!/usr/bin/php
 &amp;lt;?php

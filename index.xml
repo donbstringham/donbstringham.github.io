@@ -7,8 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Thu, 02 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jun 2016 19:35:16 -0600</lastBuildDate>
     <atom:link href="http://donbstringham.us/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Development With Docker</title>
+      <link>http://donbstringham.us/blog/2016-06-05-development-with-docker/</link>
+      <pubDate>Sun, 05 Jun 2016 19:35:16 -0600</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2016-06-05-development-with-docker/</guid>
+      <description>&lt;p&gt;Iaculis pellentesque. Aenean accumsan elit sit amet nibh feugiat semper. Cras
+tempor ornare purus. Integer id nisi. Phasellus dui velit, ultrices vel,
+ullamcorper mattis, hendrerit in, erat. Aenean vel quam at eros mattis commodo.
+Aenean feugiat iaculis justo. Maecenas accumsan justo ut nibh. Donec ac lectus
+vitae odio lobortis tristique. Donec vestibulum mattis lectus. Donec et lorem.&lt;/p&gt;
+
+&lt;p&gt;Cras sit amet mauris. Curabitur a quam. Aliquam neque. Nam nunc nunc, lacinia
+sed, varius quis, iaculis eget, ante. Nulla dictum justo eu lacus. Phasellus
+sit amet quam. Nullam sodales. Cras non magna eu est consectetuer faucibus.
+Donec tempor lobortis turpis. Sed tellus velit, ullamcorper.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Contact</title>
@@ -221,7 +240,7 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
       <guid>http://donbstringham.us/about/</guid>
       <description>
 
-&lt;h3 id=&#34;skills:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Skills&lt;/h3&gt;
+&lt;h3 id=&#34;skills&#34;&gt;Skills&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Technical Lead @ ICS and FamilySearch, Intl.&lt;/li&gt;
@@ -236,7 +255,7 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;short-bio:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Short bio&lt;/h3&gt;
+&lt;h3 id=&#34;short-bio&#34;&gt;Short bio&lt;/h3&gt;
 
 &lt;p&gt;Don B. Stringham is a Technical Lead at ICS and FamilySearch, International.  He started programming in C and Assembly in 1989.  Started coding web applications in PHP in 2007.  He is also a clean code and TDD evangelist.  He likes to be involved in Open Source and Community projects.&lt;/p&gt;
 
@@ -301,7 +320,7 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
       <guid>http://donbstringham.us/resume/</guid>
       <description>
 
-&lt;h2 id=&#34;contact-information:c59a67a3c7bc5faa453847420267045e&#34;&gt;Contact Information&lt;/h2&gt;
+&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;donbstringham at gmail dot com&lt;/li&gt;
@@ -309,7 +328,7 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
 &lt;li&gt;+1 (801) 205-3157&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;education:c59a67a3c7bc5faa453847420267045e&#34;&gt;Education&lt;/h2&gt;
+&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -337,7 +356,7 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;experience:c59a67a3c7bc5faa453847420267045e&#34;&gt;Experience&lt;/h2&gt;
+&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -370,7 +389,7 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;technical-experience:c59a67a3c7bc5faa453847420267045e&#34;&gt;Technical Experience&lt;/h2&gt;
+&lt;h2 id=&#34;technical-experience&#34;&gt;Technical Experience&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -527,81 +546,6 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
 
 &lt;li&gt;&lt;p&gt;Launch Apple Mail, compose an email and you should see your nifty new HTML email signature.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Linux PHP Daemon</title>
-      <link>http://donbstringham.us/blog/2015-01-13-linux-php-daemon/</link>
-      <pubDate>Tue, 13 Jan 2015 17:50:49 -0700</pubDate>
-      
-      <guid>http://donbstringham.us/blog/2015-01-13-linux-php-daemon/</guid>
-      <description>
-
-&lt;p&gt;Better than a crontab!&lt;/p&gt;
-
-&lt;p&gt;Many a time have my development team needed to &amp;ldquo;cronify&amp;rdquo; a PHP script for completing
-business logic quietly behind the scenes.  Once the command-line (CLI) version of the
-application was complete they would start creating and managing a crontab.  This
-practice is &lt;strong&gt;NO MORE&lt;/strong&gt; for my development teams!&lt;/p&gt;
-
-&lt;p&gt;Enter a better way of &amp;ldquo;cronifying&amp;rdquo; or better stated &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application.
-I have created a sample of &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application at &lt;a href=&#34;https://github.com/donbstringham/php-daemon&#34;&gt;https://github.com/donbstringham/php-daemon&lt;/a&gt;.
-This example is based on an article by &lt;a href=&#34;http://blog.bobbyallen.me/2014/06/02/how-to-create-a-php-linux-daemon-service/&#34;&gt;Bobby Allen&lt;/a&gt;.
-Follow the directions below and now you have a linux system daemon that is actually a
-PHP command-line application.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/donbstringham/php-daemon/blob/master/php-daemon.conf&#34;&gt;php-daemon.conf&lt;/a&gt; - Place in the directory &lt;code&gt;/etc/init&lt;/code&gt;.  On line 9 in use the &lt;strong&gt;full path&lt;/strong&gt; to the PHP file.  It is &lt;strong&gt;very&lt;/strong&gt; important to use &lt;em&gt;fully qualified paths&lt;/em&gt; in both the &lt;a href=&#34;http://upstart.ubuntu.com/&#34;&gt;Upstart&lt;/a&gt; configuration file as well as any script files that &lt;a href=&#34;http://upstart.ubuntu.com/&#34;&gt;Upstart&lt;/a&gt; daemonizes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/donbstringham/php-daemon/blob/master/php-daemon.php&#34;&gt;php-daemon.php&lt;/a&gt; - Place in any directory you want.  Remember it to use &lt;em&gt;fully qualified paths&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Use the commands below to start, stop and view the status of the new linux daemon:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo status php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo start php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo stop php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While implementing this on CENTOS/RHEL boxes a few minor changes where needed to get it run in a stable manner.  The main change was to run the daemons under the &lt;code&gt;root&lt;/code&gt; user.  Other changes are listed below in the code:&lt;/p&gt;
-
-&lt;h5 id=&#34;etc-init-php-daemon-conf:1c012054208771314ef31399f2665fcd&#34;&gt;/etc/init/php-daemon.conf&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;start on startup
-stop on shutdown
-respawn
-
-script
-    echo &amp;quot;DEBUG: `set`&amp;quot; &amp;gt; /root/php-daemon-env.log
-
-    /root/php-daemon
-end script
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;home-stringhamdb-php-daemon:1c012054208771314ef31399f2665fcd&#34;&gt;/home/stringhamdb/php-daemon&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;#!/usr/bin/php
-&amp;lt;?php
-// The worker will execute every X seconds:
-$seconds = 1;
-
-// We work out the micro seconds ready to be used by the &#39;usleep&#39; function.
-$micro = $seconds * 1000000;
-
-while (true) {
-  // This is the code you want to loop during the service...
-  $fh = fopen(&#39;/root/php-daemon.log&#39;, &#39;a&#39;) or die(&#39;Can not open file&#39;);
-  $stringData = &#39;File updated at: &#39;.time().PHP_EOL;
-  fwrite($fh, $stringData);
-  fclose($fh);
-  // Now before we &#39;cycle&#39; again, we&#39;ll sleep for a bit...
-  usleep($micro);
-}
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
