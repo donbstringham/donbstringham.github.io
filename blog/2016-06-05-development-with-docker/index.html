@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Development With Docker">
-  <meta name="generator" content="Hugo 0.16" />
+  <meta name="generator" content="Hugo 0.17" />
 
   <title>Development With Docker &middot; donbstringham</title>
 
@@ -229,16 +229,22 @@
 
 </div>
 
-  <p>Iaculis pellentesque. Aenean accumsan elit sit amet nibh feugiat semper. Cras
-tempor ornare purus. Integer id nisi. Phasellus dui velit, ultrices vel,
-ullamcorper mattis, hendrerit in, erat. Aenean vel quam at eros mattis commodo.
-Aenean feugiat iaculis justo. Maecenas accumsan justo ut nibh. Donec ac lectus
-vitae odio lobortis tristique. Donec vestibulum mattis lectus. Donec et lorem.</p>
+  <p>Being a developer for over two decades I am always looking for new ways to improve and simplify my workflow.  Recently, I&rsquo;ve moved to <a href="https://www.vagrantup.com/">Vagrant</a> which is a wrapper around virtual machine players such as <a href="https://www.virtualbox.org/wiki/Downloads">Virtual Box</a>, <a href="http://www.vmware.com/products/fusion.html">VMWare Fusion</a> and such.  The most current tool that fits the bill, though is <a href="https://www.docker.com/">Docker</a>.  It is such a great tool that I have removed Vagrant and all virtual machine players from my development Macbook Pro!</p>
 
-<p>Cras sit amet mauris. Curabitur a quam. Aliquam neque. Nam nunc nunc, lacinia
-sed, varius quis, iaculis eget, ante. Nulla dictum justo eu lacus. Phasellus
-sit amet quam. Nullam sodales. Cras non magna eu est consectetuer faucibus.
-Donec tempor lobortis turpis. Sed tellus velit, ullamcorper.</p>
+<p>Docker allows you to develop, build, deploy/ship and run applications all in the same container across all of your environments no matter what type they are.  It is a tool for your whole organization.  As a developer here are a few reasons I use it:</p>
+
+<ul>
+<li>Consistent development environments for the entire team.  Everyone uses the same OS, libraries, languages, runtimes no matter what host operating system they are using.</li>
+<li>Less <em>&ldquo;It works on my machine&rdquo;</em> because the development environment is the exact same as production.  Meaning it&rsquo;ll <em>&ldquo;just work&rdquo;</em> in production because you deploy containers!</li>
+<li>You only need Docker and an IDE or editor to develop.  No need to install many language environments on your machine.  For example, want to run a PHP script but don&rsquo;t have a PHP version installed?  Run it in a PHP image.</li>
+<li>QA can test the application with multiple language versions without have to resort to hacks for the language (python, php, ruby, java, node.js, golang).</li>
+<li>Deployment is simplified.  If it runs in the container on the build machine it will run on the production server just the same.  Package the application with the Docker image and push the image to the production server to run the new image.</li>
+<li>Developers can still use their favorite editor/IDE and tools one would normally do.  No more need for running a VM in VirtualBox and SSHing and developing from the shell.</li>
+</ul>
+
+<p>There are plenty of websites on how to use Docker for Developerment.  Here are two of them <a href="https://medium.com/iron-io-blog/why-and-how-to-use-docker-for-development-a156c1de3b24#.14iw16utk">Why and How to Use Docker for Development</a> and <a href="https://denibertovic.com/talks/supercharge-development-env-using-docker/#/">Supercharge Your Development Environment (Using Docker)</a>!  If you prefer books the only one I can really suggest is (Docker for Developers)[<a href="https://leanpub.com/dockerfordevs">https://leanpub.com/dockerfordevs</a>] by <a href="https://leanpub.com/u/ctankersley">Chris Tankersley</a>.  It is a very well written book at a great price.</p>
+
+<p>I guarantee that one you add/switch your development workflow with <strong>Docker</strong> you wonder how you ever got along with out it.</p>
 
 
   
@@ -260,8 +266,14 @@ Donec tempor lobortis turpis. Sed tellus velit, ullamcorper.</p>
   </div>
   <div class="pure-u-10-24">
     
+    <nav class="next">
+      <a href="http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/">Why I Switched To Golang!</a>
+    </nav>
+    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

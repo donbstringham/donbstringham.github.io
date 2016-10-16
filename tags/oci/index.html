@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.16" />
+  <meta name="generator" content="Hugo 0.17" />
 
   <title>Oci &middot; donbstringham</title>
 
@@ -248,7 +248,10 @@
   </header>
 
   <p>
-  Instructions for installing Oracle PHP PDO driver on CentOS/RHEL Download Oracle InstantClient RPM files here. Put these files in your server. Download the basic and devel packages. Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm Install the downloaded rpm files: $ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm $ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm $ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client $ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client Create a file inside /etc/profile.d named oracle.sh and put this as the content: export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib And run it so we’ll have LD_LIBRARY_PATH as an environment variable.
+  Instructions for installing Oracle PHP PDO driver on CentOS/RHEL
+Download Oracle InstantClient RPM files here. Put these files in your server. Download the basic and devel packages.
+ Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm  Install the downloaded rpm files:
+$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm $ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm $ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client $ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client  Create a file inside /etc/profile.d named oracle.sh and put this as the content:
   </p>
 
   

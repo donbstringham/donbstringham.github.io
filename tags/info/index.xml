@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Info on donbstringham</title>
-    <link>http://donbstringham.us/tags/info/</link>
-    <description>Recent content in Info on donbstringham</description>
+    <title>donbstringham</title>
+    <link>http://donbstringham.us/tags/info/index.xml</link>
+    <description>Recent content on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 07 Apr 2015 14:34:48 -0600</lastBuildDate>
     <atom:link href="http://donbstringham.us/tags/info/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

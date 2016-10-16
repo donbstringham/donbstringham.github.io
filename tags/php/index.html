@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.16" />
+  <meta name="generator" content="Hugo 0.17" />
 
   <title>Php &middot; donbstringham</title>
 
@@ -248,7 +248,10 @@
   </header>
 
   <p>
-  Instructions for installing Oracle PHP PDO driver on CentOS/RHEL Download Oracle InstantClient RPM files here. Put these files in your server. Download the basic and devel packages. Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm Install the downloaded rpm files: $ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm $ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm $ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client $ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client Create a file inside /etc/profile.d named oracle.sh and put this as the content: export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib And run it so we’ll have LD_LIBRARY_PATH as an environment variable.
+  Instructions for installing Oracle PHP PDO driver on CentOS/RHEL
+Download Oracle InstantClient RPM files here. Put these files in your server. Download the basic and devel packages.
+ Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm  Install the downloaded rpm files:
+$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm $ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm $ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client $ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client  Create a file inside /etc/profile.d named oracle.sh and put this as the content:
   </p>
 
   
@@ -295,7 +298,8 @@
   </header>
 
   <p>
-  Building a PHAR for a PHP project! Some in the PHP community have said the PHP developers have too much Java envy. I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it! One of the practices that I am glad that is now in PHP is the single PHAR archive for PHP applications.
+  Building a PHAR for a PHP project!
+Some in the PHP community have said the PHP developers have too much Java envy. I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it! One of the practices that I am glad that is now in PHP is the single PHAR archive for PHP applications.
   </p>
 
   
@@ -338,7 +342,8 @@
   </header>
 
   <p>
-  Beware a PHAR requires absolute paths! Hopefully, this post save a PHP developer some time.
+  Beware a PHAR requires absolute paths!
+Hopefully, this post save a PHP developer some time.
   </p>
 
   
@@ -379,7 +384,9 @@
   </header>
 
   <p>
-  *Composer Autoloading Not Just for Vendor Files* Teacher can and should learn from students! That is one of the things I find very satisfying about being an adjunct professor at Weber State University. The fact that I can learn new and usual things from those I teach. Last night was one of those times. In fielding questions about a PHP project a comment came up about multiple autoloaders. In the first project I had the students create their own autoloader.
+  *Composer Autoloading Not Just for Vendor Files*
+Teacher can and should learn from students! That is one of the things I find very satisfying about being an adjunct professor at Weber State University. The fact that I can learn new and usual things from those I teach. Last night was one of those times.
+In fielding questions about a PHP project a comment came up about multiple autoloaders. In the first project I had the students create their own autoloader.
   </p>
 
   
@@ -424,7 +431,8 @@
   </header>
 
   <p>
-  Implementing a local Packagist with Satis Many large companies, including the one I am currently working for FamilySearch, Intl., operate many servers that do not have connectivity to the internet at large. In other words, they cannot reach Packagist rendering using composer useless. Luckily, the developers at composer have provided a solution to the above problem, private packages. I had been using composer for awhile but was un-aware of Satis or Toran Proxy until I attend Rafael Dohms Composer: The Right Way at php[world] 2014 in Washington, D.C.
+  Implementing a local Packagist with Satis
+Many large companies, including the one I am currently working for FamilySearch, Intl., operate many servers that do not have connectivity to the internet at large. In other words, they cannot reach Packagist rendering using composer useless. Luckily, the developers at composer have provided a solution to the above problem, private packages. I had been using composer for awhile but was un-aware of Satis or Toran Proxy until I attend Rafael Dohms Composer: The Right Way at php[world] 2014 in Washington, D.
   </p>
 
   
@@ -467,7 +475,8 @@
   </header>
 
   <p>
-  Better PHP performance by optimizing realpath_cache! System calls are big performance hits on an OS. Systems calls typically lead to context switches in which the CPU state is saved and retrieved during which kernal code in the CPU pipeline. Anyways, filesystem access definitely uses system calls in an OS. PHP does that a lot especially during include, require, include_one and require_once. Anytime a file is accessed PHP will issue a realpath call.
+  Better PHP performance by optimizing realpath_cache!
+System calls are big performance hits on an OS. Systems calls typically lead to context switches in which the CPU state is saved and retrieved during which kernal code in the CPU pipeline. Anyways, filesystem access definitely uses system calls in an OS. PHP does that a lot especially during include, require, include_one and require_once. Anytime a file is accessed PHP will issue a realpath call.
   </p>
 
   
@@ -512,7 +521,9 @@
   </header>
 
   <p>
-  Better than a crontab! Many a time have my development team needed to &ldquo;cronify&rdquo; a PHP script for completing business logic quietly behind the scenes. Once the command-line (CLI) version of the application was complete they would start creating and managing a crontab. This practice is NO MORE for my development teams! Enter a better way of &ldquo;cronifying&rdquo; or better stated &ldquo;daemonizing&rdquo; a PHP CLI application. I have created a sample of &ldquo;daemonizing&rdquo; a PHP CLI application at https://github.com/donbstringham/php-daemon.
+  Better than a crontab!
+Many a time have my development team needed to &ldquo;cronify&rdquo; a PHP script for completing business logic quietly behind the scenes. Once the command-line (CLI) version of the application was complete they would start creating and managing a crontab. This practice is NO MORE for my development teams!
+Enter a better way of &ldquo;cronifying&rdquo; or better stated &ldquo;daemonizing&rdquo; a PHP CLI application. I have created a sample of &ldquo;daemonizing&rdquo; a PHP CLI application at https://github.
   </p>
 
   
@@ -557,7 +568,8 @@
   </header>
 
   <p>
-  I am NOT as crazy as I thought! Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about dependency injection altogether. Years ago I learned from Misko Hevery from Google that a service locator is really just global state or a bad singleton in sheep&rsquo;s clothing. He states that a service locator violates the Law of Demeter and calls singletons are pathological liars.
+  I am NOT as crazy as I thought!
+Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about dependency injection altogether. Years ago I learned from Misko Hevery from Google that a service locator is really just global state or a bad singleton in sheep&rsquo;s clothing. He states that a service locator violates the Law of Demeter and calls singletons are pathological liars.
   </p>
 
   
@@ -604,7 +616,8 @@
   </header>
 
   <p>
-  Domain-Driven Design in PHP Experiment and Project Seed A current and difficult software development project has recently sent me scurrying for answers. In that search I&rsquo;ve rediscovered the book Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans. In addition to re-reading the book and reviewing a handful of slide-decks at SlideShare; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.
+  Domain-Driven Design in PHP Experiment and Project Seed
+A current and difficult software development project has recently sent me scurrying for answers. In that search I&rsquo;ve rediscovered the book Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans. In addition to re-reading the book and reviewing a handful of slide-decks at SlideShare; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.
   </p>
 
   

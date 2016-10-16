@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.16" />
+  <meta name="generator" content="Hugo 0.17" />
 
   <title>donbstringham</title>
 
@@ -213,6 +213,50 @@
   
     <article>
   <header>
+    <h2><a href="http://donbstringham.us/blog/2015-03-09-optimizing-the-realpath_cache/">Optimizing the realpath_cache</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>09 Mar 2015, 09:49</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://donbstringham.us/tags/php">php</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Better PHP performance by optimizing realpath_cache!
+System calls are big performance hits on an OS. Systems calls typically lead to context switches in which the CPU state is saved and retrieved during which kernal code in the CPU pipeline. Anyways, filesystem access definitely uses system calls in an OS. PHP does that a lot especially during include, require, include_one and require_once. Anytime a file is accessed PHP will issue a realpath call.
+  </p>
+
+  
+  <footer>
+    <a href="http://donbstringham.us/blog/2015-03-09-optimizing-the-realpath_cache/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="http://donbstringham.us/blog/2015-03-06-html-signatures-in-apple-mail/">HTML Signatures in Apple Mail</a></h2>
 
     <div class="post-meta">
@@ -247,7 +291,8 @@
   </header>
 
   <p>
-  Short, concise and good looking HTML email signatures! Though there are quite a few of email applications for the Mac OSX none of them combine all the email accounts into one. I mean they don&rsquo;t work with my work email stringhamdb@familysearch.org while working with my personal and schools emails or vice versa. The only one that does is Apple Mail. The email signature feature in Apple Mail is very limited and this post is a way to work around that.
+  Short, concise and good looking HTML email signatures!
+Though there are quite a few of email applications for the Mac OSX none of them combine all the email accounts into one. I mean they don&rsquo;t work with my work email stringhamdb@familysearch.org while working with my personal and schools emails or vice versa. The only one that does is Apple Mail. The email signature feature in Apple Mail is very limited and this post is a way to work around that.
   </p>
 
   
@@ -292,7 +337,9 @@
   </header>
 
   <p>
-  Better than a crontab! Many a time have my development team needed to &ldquo;cronify&rdquo; a PHP script for completing business logic quietly behind the scenes. Once the command-line (CLI) version of the application was complete they would start creating and managing a crontab. This practice is NO MORE for my development teams! Enter a better way of &ldquo;cronifying&rdquo; or better stated &ldquo;daemonizing&rdquo; a PHP CLI application. I have created a sample of &ldquo;daemonizing&rdquo; a PHP CLI application at https://github.com/donbstringham/php-daemon.
+  Better than a crontab!
+Many a time have my development team needed to &ldquo;cronify&rdquo; a PHP script for completing business logic quietly behind the scenes. Once the command-line (CLI) version of the application was complete they would start creating and managing a crontab. This practice is NO MORE for my development teams!
+Enter a better way of &ldquo;cronifying&rdquo; or better stated &ldquo;daemonizing&rdquo; a PHP CLI application. I have created a sample of &ldquo;daemonizing&rdquo; a PHP CLI application at https://github.
   </p>
 
   
@@ -337,7 +384,8 @@
   </header>
 
   <p>
-  I am NOT as crazy as I thought! Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about dependency injection altogether. Years ago I learned from Misko Hevery from Google that a service locator is really just global state or a bad singleton in sheep&rsquo;s clothing. He states that a service locator violates the Law of Demeter and calls singletons are pathological liars.
+  I am NOT as crazy as I thought!
+Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about dependency injection altogether. Years ago I learned from Misko Hevery from Google that a service locator is really just global state or a bad singleton in sheep&rsquo;s clothing. He states that a service locator violates the Law of Demeter and calls singletons are pathological liars.
   </p>
 
   
@@ -384,7 +432,8 @@
   </header>
 
   <p>
-  Use Google Apps for a free personal CDN: So with some personal branding on a few websites it became apparent that my life would be much simpler if I had a personal CDN to store and share common files. After a little bit of research some CDN providers it became obvious that there are not many simple or FREE personal CDN solutions out there. So I googled &ldquo;personal cdn&rdquo; and the first link was magical!
+  Use Google Apps for a free personal CDN:
+So with some personal branding on a few websites it became apparent that my life would be much simpler if I had a personal CDN to store and share common files. After a little bit of research some CDN providers it became obvious that there are not many simple or FREE personal CDN solutions out there. So I googled &ldquo;personal cdn&rdquo; and the first link was magical!
   </p>
 
   
@@ -431,7 +480,8 @@
   </header>
 
   <p>
-  Domain-Driven Design in PHP Experiment and Project Seed A current and difficult software development project has recently sent me scurrying for answers. In that search I&rsquo;ve rediscovered the book Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans. In addition to re-reading the book and reviewing a handful of slide-decks at SlideShare; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.
+  Domain-Driven Design in PHP Experiment and Project Seed
+A current and difficult software development project has recently sent me scurrying for answers. In that search I&rsquo;ve rediscovered the book Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans. In addition to re-reading the book and reviewing a handful of slide-decks at SlideShare; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.
   </p>
 
   
@@ -476,7 +526,9 @@
   </header>
 
   <p>
-  We should all be using Semantic Versioning: During this November I attended the PHP[WORLD] 2014 conference in Washington, D.C. To say that it was a beneficial conference would be an understatement. It seemed that valuable information was being shared at every corner. One of those gems is semantic versioning. This topic came up during a session on how to use PHP Composer by Rafael Dohms. Semantic versioning uses the familiar format xx.yy.zz.
+  We should all be using Semantic Versioning:
+During this November I attended the PHP[WORLD] 2014 conference in Washington, D.C. To say that it was a beneficial conference would be an understatement. It seemed that valuable information was being shared at every corner. One of those gems is semantic versioning. This topic came up during a session on how to use PHP Composer by Rafael Dohms.
+Semantic versioning uses the familiar format xx.
   </p>
 
   

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Phar on donbstringham</title>
-    <link>http://donbstringham.us/tags/phar/</link>
-    <description>Recent content in Phar on donbstringham</description>
+    <title>donbstringham</title>
+    <link>http://donbstringham.us/tags/phar/index.xml</link>
+    <description>Recent content on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 21 Apr 2015 11:10:52 -0700</lastBuildDate>
     <atom:link href="http://donbstringham.us/tags/phar/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on donbstringham</title>
-    <link>http://donbstringham.us/post/</link>
-    <description>Recent content in Posts on donbstringham</description>
+    <title>Post-rsses on donbstringham</title>
+    <link>http://donbstringham.us/post/index.xml</link>
+    <description>Recent content in Post-rsses on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 05 Jun 2016 19:35:16 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 16 Oct 2016 14:31:00 -0600</lastBuildDate>
     <atom:link href="http://donbstringham.us/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Why I Switched To Golang!</title>
+      <link>http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/</link>
+      <pubDate>Sun, 16 Oct 2016 14:31:00 -0600</pubDate>
+      
+      <guid>http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Development With Docker</title>
@@ -16,16 +25,22 @@
       <pubDate>Sun, 05 Jun 2016 19:35:16 -0600</pubDate>
       
       <guid>http://donbstringham.us/blog/2016-06-05-development-with-docker/</guid>
-      <description>&lt;p&gt;Iaculis pellentesque. Aenean accumsan elit sit amet nibh feugiat semper. Cras
-tempor ornare purus. Integer id nisi. Phasellus dui velit, ultrices vel,
-ullamcorper mattis, hendrerit in, erat. Aenean vel quam at eros mattis commodo.
-Aenean feugiat iaculis justo. Maecenas accumsan justo ut nibh. Donec ac lectus
-vitae odio lobortis tristique. Donec vestibulum mattis lectus. Donec et lorem.&lt;/p&gt;
+      <description>&lt;p&gt;Being a developer for over two decades I am always looking for new ways to improve and simplify my workflow.  Recently, I&amp;rsquo;ve moved to &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; which is a wrapper around virtual machine players such as &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;Virtual Box&lt;/a&gt;, &lt;a href=&#34;http://www.vmware.com/products/fusion.html&#34;&gt;VMWare Fusion&lt;/a&gt; and such.  The most current tool that fits the bill, though is &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt;.  It is such a great tool that I have removed Vagrant and all virtual machine players from my development Macbook Pro!&lt;/p&gt;
 
-&lt;p&gt;Cras sit amet mauris. Curabitur a quam. Aliquam neque. Nam nunc nunc, lacinia
-sed, varius quis, iaculis eget, ante. Nulla dictum justo eu lacus. Phasellus
-sit amet quam. Nullam sodales. Cras non magna eu est consectetuer faucibus.
-Donec tempor lobortis turpis. Sed tellus velit, ullamcorper.&lt;/p&gt;
+&lt;p&gt;Docker allows you to develop, build, deploy/ship and run applications all in the same container across all of your environments no matter what type they are.  It is a tool for your whole organization.  As a developer here are a few reasons I use it:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Consistent development environments for the entire team.  Everyone uses the same OS, libraries, languages, runtimes no matter what host operating system they are using.&lt;/li&gt;
+&lt;li&gt;Less &lt;em&gt;&amp;ldquo;It works on my machine&amp;rdquo;&lt;/em&gt; because the development environment is the exact same as production.  Meaning it&amp;rsquo;ll &lt;em&gt;&amp;ldquo;just work&amp;rdquo;&lt;/em&gt; in production because you deploy containers!&lt;/li&gt;
+&lt;li&gt;You only need Docker and an IDE or editor to develop.  No need to install many language environments on your machine.  For example, want to run a PHP script but don&amp;rsquo;t have a PHP version installed?  Run it in a PHP image.&lt;/li&gt;
+&lt;li&gt;QA can test the application with multiple language versions without have to resort to hacks for the language (python, php, ruby, java, node.js, golang).&lt;/li&gt;
+&lt;li&gt;Deployment is simplified.  If it runs in the container on the build machine it will run on the production server just the same.  Package the application with the Docker image and push the image to the production server to run the new image.&lt;/li&gt;
+&lt;li&gt;Developers can still use their favorite editor/IDE and tools one would normally do.  No more need for running a VM in VirtualBox and SSHing and developing from the shell.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are plenty of websites on how to use Docker for Developerment.  Here are two of them &lt;a href=&#34;https://medium.com/iron-io-blog/why-and-how-to-use-docker-for-development-a156c1de3b24#.14iw16utk&#34;&gt;Why and How to Use Docker for Development&lt;/a&gt; and &lt;a href=&#34;https://denibertovic.com/talks/supercharge-development-env-using-docker/#/&#34;&gt;Supercharge Your Development Environment (Using Docker)&lt;/a&gt;!  If you prefer books the only one I can really suggest is (Docker for Developers)[&lt;a href=&#34;https://leanpub.com/dockerfordevs&#34;&gt;https://leanpub.com/dockerfordevs&lt;/a&gt;] by &lt;a href=&#34;https://leanpub.com/u/ctankersley&#34;&gt;Chris Tankersley&lt;/a&gt;.  It is a very well written book at a great price.&lt;/p&gt;
+
+&lt;p&gt;I guarantee that one you add/switch your development workflow with &lt;strong&gt;Docker&lt;/strong&gt; you wonder how you ever got along with out it.&lt;/p&gt;
 </description>
     </item>
     
@@ -434,45 +449,6 @@ upload: index.html
 
 &lt;p&gt;It took me about one hour to setup and configure Google Apps as a personal CDN.  So now I use this personal CDN for
 static content on a couple of personal websites as well as fonts and images for my various email signatures.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>DDD in PHP Experiment</title>
-      <link>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</link>
-      <pubDate>Thu, 11 Dec 2014 12:52:29 -0700</pubDate>
-      
-      <guid>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</guid>
-      <description>&lt;p&gt;Domain-Driven Design in PHP Experiment and Project Seed&lt;/p&gt;
-
-&lt;p&gt;A current and difficult software development project has recently sent me scurrying for answers.  In that search I&amp;rsquo;ve rediscovered the book &lt;a href=&#34;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&amp;amp;qid=1418357436&amp;amp;sr=8-1&amp;amp;keywords=domain+driven+design&#34;&gt;Domain-Driven Design: Tackling Complexity in the Heart of Software&lt;/a&gt; by Eric Evans.  In addition to re-reading the book and reviewing a handful of slide-decks at &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;SlideShare&lt;/a&gt;; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.  So I have started a &lt;a href=&#34;https://github.com/stringhamdb/d3x&#34;&gt;Github project&lt;/a&gt; to test out the implementation differences.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;First, I am looking at the differences in the persistence and database access (DBAL) components in the infrastructure layer.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;For example one question that needs to be answered is should a DataMapper reside in the Domain or Infrastructure layer.&lt;/li&gt;
-&lt;li&gt;Another is should the DataMapper be implemented following the pattern religiously or with application specific variations.&lt;/li&gt;
-&lt;li&gt;Is it really a DataMapper or is it better called a DomainMapper that then uses TableDataGateways and RowDataGateways to read from persistence storage?&lt;/li&gt;
-&lt;li&gt;Is there a DataMapper class in the infrastructure layer that communicates with the DomainMapper in the domain layer?  That these two objects can pull from multiple tables using SQL and create a single entity or a single aggregate entity.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Second, I am looking at the differences in how domain classes versus infrastructure classes are constructed via factories.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Which factory pattern is a best practice?&lt;/li&gt;
-&lt;li&gt;If the factory method pattern is the best practice should it be implemented religiously or with variations?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Thirdly, where can I use things like &lt;code&gt;memcached&lt;/code&gt; or an op-code cache to improve the performance of large data sets.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Data sets such as a repository might easily grow beyond a thousand aggregate  root entities with maybe over tens times that in regular entities.&lt;/li&gt;
-&lt;li&gt;Large data sets could easily cause the database syndrome known as &amp;lsquo;death by a thousand cuts&amp;rsquo; meaning that a repository during a load process could easily ask the infrastructure layer to make a lot of database calls bringing the server to it&amp;rsquo;s knees.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anyways, it should turn into a great learning experience.&lt;/p&gt;
 </description>
     </item>
     
