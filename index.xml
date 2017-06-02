@@ -2,46 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>donbstringham</title>
-    <link>http://donbstringham.us/index.xml</link>
+    <link>http://donbstringham.us/</link>
     <description>Recent content on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Sun, 16 Oct 2016 14:31:00 -0600</lastBuildDate>
-    <atom:link href="http://donbstringham.us/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://donbstringham.us/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Why I Switched To Golang!</title>
-      <link>http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/</link>
+      <link>http://donbstringham.us/post/2016-10-16-why-i-switched-to-go/</link>
       <pubDate>Sun, 16 Oct 2016 14:31:00 -0600</pubDate>
       
-      <guid>http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/</guid>
+      <guid>http://donbstringham.us/post/2016-10-16-why-i-switched-to-go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development With Docker</title>
-      <link>http://donbstringham.us/blog/2016-06-05-development-with-docker/</link>
+      <link>http://donbstringham.us/post/2016-06-05-dev-with-docker/</link>
       <pubDate>Sun, 05 Jun 2016 19:35:16 -0600</pubDate>
       
-      <guid>http://donbstringham.us/blog/2016-06-05-development-with-docker/</guid>
-      <description>&lt;p&gt;Being a developer for over two decades I am always looking for new ways to improve and simplify my workflow.  Recently, I&amp;rsquo;ve moved to &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; which is a wrapper around virtual machine players such as &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;Virtual Box&lt;/a&gt;, &lt;a href=&#34;http://www.vmware.com/products/fusion.html&#34;&gt;VMWare Fusion&lt;/a&gt; and such.  The most current tool that fits the bill, though is &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt;.  It is such a great tool that I have removed Vagrant and all virtual machine players from my development Macbook Pro!&lt;/p&gt;
-
-&lt;p&gt;Docker allows you to develop, build, deploy/ship and run applications all in the same container across all of your environments no matter what type they are.  It is a tool for your whole organization.  As a developer here are a few reasons I use it:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Consistent development environments for the entire team.  Everyone uses the same OS, libraries, languages, runtimes no matter what host operating system they are using.&lt;/li&gt;
-&lt;li&gt;Less &lt;em&gt;&amp;ldquo;It works on my machine&amp;rdquo;&lt;/em&gt; because the development environment is the exact same as production.  Meaning it&amp;rsquo;ll &lt;em&gt;&amp;ldquo;just work&amp;rdquo;&lt;/em&gt; in production because you deploy containers!&lt;/li&gt;
-&lt;li&gt;You only need Docker and an IDE or editor to develop.  No need to install many language environments on your machine.  For example, want to run a PHP script but don&amp;rsquo;t have a PHP version installed?  Run it in a PHP image.&lt;/li&gt;
-&lt;li&gt;QA can test the application with multiple language versions without have to resort to hacks for the language (python, php, ruby, java, node.js, golang).&lt;/li&gt;
-&lt;li&gt;Deployment is simplified.  If it runs in the container on the build machine it will run on the production server just the same.  Package the application with the Docker image and push the image to the production server to run the new image.&lt;/li&gt;
-&lt;li&gt;Developers can still use their favorite editor/IDE and tools one would normally do.  No more need for running a VM in VirtualBox and SSHing and developing from the shell.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are plenty of websites on how to use Docker for Developerment.  Here are two of them &lt;a href=&#34;https://medium.com/iron-io-blog/why-and-how-to-use-docker-for-development-a156c1de3b24#.14iw16utk&#34;&gt;Why and How to Use Docker for Development&lt;/a&gt; and &lt;a href=&#34;https://denibertovic.com/talks/supercharge-development-env-using-docker/#/&#34;&gt;Supercharge Your Development Environment (Using Docker)&lt;/a&gt;!  If you prefer books the only one I can really suggest is (Docker for Developers)[&lt;a href=&#34;https://leanpub.com/dockerfordevs&#34;&gt;https://leanpub.com/dockerfordevs&lt;/a&gt;] by &lt;a href=&#34;https://leanpub.com/u/ctankersley&#34;&gt;Chris Tankersley&lt;/a&gt;.  It is a very well written book at a great price.&lt;/p&gt;
-
-&lt;p&gt;I guarantee that one you add/switch your development workflow with &lt;strong&gt;Docker&lt;/strong&gt; you wonder how you ever got along with out it.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2016-06-05-dev-with-docker/</guid>
+      <description>Being a developer for over two decades I am always looking for new ways to improve and simplify my workflow. Recently, I&amp;rsquo;ve moved to Vagrant which is a wrapper around virtual machine players such as Virtual Box, VMWare Fusion and such. The most current tool that fits the bill, though is Docker. It is such a great tool that I have removed Vagrant and all virtual machine players from my development Macbook Pro!</description>
     </item>
     
     <item>
@@ -50,201 +36,70 @@
       <pubDate>Thu, 02 Jun 2016 00:00:00 +0000</pubDate>
       
       <guid>http://donbstringham.us/contact/</guid>
-      <description>&lt;form class=&#34;pure-form pure-form-stacked&#34;&gt;
-  &lt;fieldset&gt;
-    &lt;div class=&#34;pure-g&#34;&gt;
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;first-name&#34;&gt;First Name&lt;/label&gt;
-        &lt;input id=&#34;first-name&#34; class=&#34;pure-u-23-24&#34; type=&#34;text&#34;&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;last-name&#34;&gt;Last Name&lt;/label&gt;
-        &lt;input id=&#34;last-name&#34; class=&#34;pure-u-23-24&#34; type=&#34;text&#34;&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;email&#34;&gt;E-Mail&lt;/label&gt;
-        &lt;input id=&#34;email&#34; class=&#34;pure-u-23-24&#34; type=&#34;email&#34; required&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;city&#34;&gt;City&lt;/label&gt;
-        &lt;input id=&#34;city&#34; class=&#34;pure-u-23-24&#34; type=&#34;text&#34;&gt;
-      &lt;/div&gt;
-
-      &lt;div class=&#34;pure-u-1 pure-u-md-1-3&#34;&gt;
-        &lt;label for=&#34;state&#34;&gt;State&lt;/label&gt;
-        &lt;select id=&#34;state&#34; class=&#34;pure-input-1-2&#34;&gt;
-          &lt;option&gt;AL&lt;/option&gt;
-          &lt;option&gt;AZ&lt;/option&gt;
-          &lt;option&gt;CA&lt;/option&gt;
-          &lt;option&gt;ID&lt;/option&gt;
-          &lt;option&gt;IL&lt;/option&gt;
-          &lt;option&gt;UT&lt;/option&gt;
-        &lt;/select&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;fieldset class=&#34;pure-group&#34;&gt;
-      &lt;input type=&#34;text&#34; class=&#34;pure-input-1-2&#34; placeholder=&#34;A title&#34;&gt;
-      &lt;textarea class=&#34;pure-input-1-2&#34; placeholder=&#34;Your message&#34;&gt;&lt;/textarea&gt;
-    &lt;/fieldset&gt;
-    &lt;button type=&#34;submit&#34; class=&#34;pure-button pure-button-primary&#34;&gt;Send&lt;/button&gt;
-  &lt;/fieldset&gt;
-&lt;/form&gt;
-</description>
+      <description> First Name  Last Name  E-Mail  City  State AL AZ CA ID IL UT      Send   </description>
     </item>
     
     <item>
       <title>Code Climate</title>
-      <link>http://donbstringham.us/blog/2015-05-21-code-climate/</link>
+      <link>http://donbstringham.us/post/2015-05-21-code-climate/</link>
       <pubDate>Thu, 21 May 2015 11:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-05-21-code-climate/</guid>
-      <description>&lt;p&gt;*Make your code &lt;strong&gt;NOT&lt;/strong&gt; suck!*&lt;/p&gt;
-
-&lt;p&gt;I love the idea of automated code reviews!  It makes the development process much faster and allows the engineer to focus more on the business logic.  Which is where his attention should be focused.  Of the few automated code reviews tools I&amp;rsquo;ve used my favorite is &lt;a href=&#34;http://codeclimate.com&#34;&gt;Code Climate&lt;/a&gt;.  There is only one problem I have with Code Climate and that is it&amp;rsquo;s pricing structure.  It is definitely going after the development team or enterprise team audience.  While I am waiting for them to get back to me about student and non-profit plans I have been using PHP Code Sniffer (&lt;em&gt;phpcs&lt;/em&gt;) with &lt;em&gt;php-cs-fixer&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The grading scale and code coverage integration along with the ticket integration are the features that I used consistently.  These things can be done other ways but Code Climate makes it so much easier.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-05-21-code-climate/</guid>
+      <description>*Make your code NOT suck!*
+I love the idea of automated code reviews! It makes the development process much faster and allows the engineer to focus more on the business logic. Which is where his attention should be focused. Of the few automated code reviews tools I&amp;rsquo;ve used my favorite is Code Climate. There is only one problem I have with Code Climate and that is it&amp;rsquo;s pricing structure. It is definitely going after the development team or enterprise team audience.</description>
     </item>
     
     <item>
       <title>Different Programming Mode</title>
-      <link>http://donbstringham.us/blog/2015-04-23-different-programming-mode/</link>
+      <link>http://donbstringham.us/post/2015-04-23-different-programming-modes/</link>
       <pubDate>Thu, 23 Apr 2015 15:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-23-different-programming-mode/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Programming is more than just writing code&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Many people, including developers, believe that the activity of programming is just writing code.  They are either ignorant because they don&amp;rsquo;t develop or do not pay attention while they develop.  Programming can be divided into a few activities that have very different mind-sets and this isn&amp;rsquo;t just my experience it also accords with Martin Fowler.&lt;/p&gt;
-
-&lt;p&gt;The most popular activity is adding new features.  It is the one that most people relate to as the &lt;em&gt;only&lt;/em&gt; activity of software development.  The others are &lt;a href=&#34;https://youtu.be/vqEg37e4Mkw&#34;&gt;refactoring&lt;/a&gt;, debugging, research and development, performance improvement just to name a few.&lt;/p&gt;
-
-&lt;p&gt;When refactoring your mind-set should be &amp;ldquo;I should never change the behavior of the code&amp;rdquo;.  When adding features the mind-set is &amp;ldquo;I am changing and/or adding new behavior to the code&amp;rdquo;.  These two mind-sets have a different feel or rhythm as Martin Fowler describes it.&lt;/p&gt;
-
-&lt;p&gt;Based on this then developers should have a quiet area in which to work.  Making the transition between the modes much easier.  A great article about it is &lt;a href=&#34;http://www.joelonsoftware.com/articles/FieldGuidetoDevelopers.html&#34;&gt;A Field Guide to Developers&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-23-different-programming-modes/</guid>
+      <description>Programming is more than just writing code
+Many people, including developers, believe that the activity of programming is just writing code. They are either ignorant because they don&amp;rsquo;t develop or do not pay attention while they develop. Programming can be divided into a few activities that have very different mind-sets and this isn&amp;rsquo;t just my experience it also accords with Martin Fowler.
+The most popular activity is adding new features. It is the one that most people relate to as the only activity of software development.</description>
     </item>
     
     <item>
       <title>Install Oracle PHP PDO Driver</title>
-      <link>http://donbstringham.us/blog/2015-04-22-install-oracle-php-pdo-driver/</link>
+      <link>http://donbstringham.us/post/2015-04-22-php-pdo-oci/</link>
       <pubDate>Wed, 22 Apr 2015 11:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-22-install-oracle-php-pdo-driver/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Instructions for installing Oracle PHP PDO driver on CentOS/RHEL&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Download Oracle InstantClient RPM files &lt;a href=&#34;http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html&#34;&gt;here&lt;/a&gt;. Put these files in your server. Download the basic and devel packages.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Install the downloaded rpm files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm
-$ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
-$ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client
-$ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create a file inside &lt;code&gt;/etc/profile.d&lt;/code&gt; named &lt;code&gt;oracle.sh&lt;/code&gt; and put this as the content:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And run it so we’ll have &lt;code&gt;LD_LIBRARY_PATH&lt;/code&gt; as an environment variable.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;source /etc/profile.d/oracle.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Download the PDO_OCI source using pecl.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pecl download PDO_OCI
-$ tar -xvf PDO_OCI-1.0.tgz
-$ cd PDO_OCI-1.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Inside the PDO_OCI-1.0 folder, edit the file named &lt;code&gt;config.m4&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Find a pattern like this near line 10 and add these 2 lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;elif test -f $PDO_OCI_DIR/lib/libclntsh.$SHLIB_SUFFIX_NAME.12.1; then
-  PDO_OCI_VERSION=12.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Find a pattern like this near line 101 and add these lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;12.1)
-  PHP_ADD_LIBRARY(clntsh, 1, PDO_OCI_SHARED_LIBADD)
-  ;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Build and install the extension.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ phpize
-$ ./configure --with-pdo-oci=instantclient,/usr,12.1
-$ make
-$ sudo make install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you see the compilation error:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;quot;pdo_oci.c:34: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘pdo_oci_functions’&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To solve it just change &lt;code&gt;function_entry&lt;/code&gt; to &lt;code&gt;zend_function_entry&lt;/code&gt; around line 34.&lt;/p&gt;
-
-&lt;p&gt;To enable the extension, add a file named &lt;code&gt;pdo_oci.ini&lt;/code&gt; under &lt;code&gt;/etc/php.d&lt;/code&gt; and put this as the content:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;extension=pdo_oci.so
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Validate that it was successfully installed.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ php -i | grep oci&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You should see something like this in the output:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/etc/php.d/pdo_oci.ini,
-PDO drivers =&amp;gt; oci, odbc, sqlite
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-22-php-pdo-oci/</guid>
+      <description>Instructions for installing Oracle PHP PDO driver on CentOS/RHEL
+Download Oracle InstantClient RPM files here. Put these files in your server. Download the basic and devel packages.
+ Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm  Install the downloaded rpm files:
+$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm $ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm $ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client $ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client  Create a file inside /etc/profile.d named oracle.sh and put this as the content:</description>
     </item>
     
     <item>
       <title>Building a PHAR for a PHP project</title>
-      <link>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</link>
+      <link>http://donbstringham.us/post/2015-04-21-building-a-phar/</link>
       <pubDate>Tue, 21 Apr 2015 11:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Building a PHAR for a PHP project!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Some in the PHP community have said the PHP developers have too much Java envy.  I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it!  One of the practices that  I am glad that is now in PHP is the single PHAR archive for PHP applications.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-21-building-a-phar/</guid>
+      <description>Building a PHAR for a PHP project!
+Some in the PHP community have said the PHP developers have too much Java envy. I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it! One of the practices that I am glad that is now in PHP is the single PHAR archive for PHP applications.</description>
     </item>
     
     <item>
       <title>PHAR&#39;s and file path&#39;s</title>
-      <link>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</link>
+      <link>http://donbstringham.us/post/2015-04-17-phar-and-file/</link>
       <pubDate>Fri, 17 Apr 2015 21:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Beware a PHAR requires absolute paths!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Hopefully, this post save a PHP developer some time.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-17-phar-and-file/</guid>
+      <description>Beware a PHAR requires absolute paths!
+Hopefully, this post save a PHP developer some time.</description>
     </item>
     
     <item>
       <title>Refactoring to Microservices</title>
-      <link>http://donbstringham.us/blog/2015-04-17-refactoring-to-microservices/</link>
+      <link>http://donbstringham.us/post/2015-04-17-refactoring-to-microservices/</link>
       <pubDate>Fri, 17 Apr 2015 11:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-17-refactoring-to-microservices/</guid>
-      <description>&lt;p&gt;&lt;em&gt;EMRIS a perfect fit for Microservices&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Microservices, a new old flavor of the the month?&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-17-refactoring-to-microservices/</guid>
+      <description>EMRIS a perfect fit for Microservices
+Microservices, a new old flavor of the the month?</description>
     </item>
     
     <item>
@@ -253,30 +108,7 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
       <pubDate>Tue, 07 Apr 2015 14:34:48 -0600</pubDate>
       
       <guid>http://donbstringham.us/about/</guid>
-      <description>
-
-&lt;h3 id=&#34;skills&#34;&gt;Skills&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Technical Lead @ ICS and FamilySearch, Intl.&lt;/li&gt;
-&lt;li&gt;Adjunct Professor in CS @ Weber State University.&lt;/li&gt;
-&lt;li&gt;Post-graduate @ Georgia Institute of Technology.&lt;/li&gt;
-&lt;li&gt;Professional PHP Consultant.&lt;/li&gt;
-&lt;li&gt;Professional Web Consultant.&lt;/li&gt;
-&lt;li&gt;Clean Code evangelist.&lt;/li&gt;
-&lt;li&gt;Test-Driven Development evangelist.&lt;/li&gt;
-&lt;li&gt;Domain-Driven Design evangelist.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;short-bio&#34;&gt;Short bio&lt;/h3&gt;
-
-&lt;p&gt;Don B. Stringham is a Technical Lead at ICS and FamilySearch, International.  He started programming in C and Assembly in 1989.  Started coding web applications in PHP in 2007.  He is also a clean code and TDD evangelist.  He likes to be involved in Open Source and Community projects.&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&#34;twitter-timeline&#34; href=&#34;https://twitter.com/donbstringham&#34; data-widget-id=&#34;506291613128089600&#34;&gt;Tweets by @donbstringham&lt;/a&gt;
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&amp;lsquo;http&amp;rsquo;:&amp;lsquo;https&amp;rsquo;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&amp;rdquo;://platform.twitter.com/widgets.js&amp;rdquo;;fjs.parentNode.insertBefore(js,fjs);}}(document,&amp;ldquo;script&amp;rdquo;,&amp;ldquo;twitter-wjs&amp;rdquo;);&lt;/script&gt;&lt;/p&gt;
-</description>
+      <description>Skills  Technical Lead @ ICS and FamilySearch, Intl. Adjunct Professor in CS @ Weber State University. Post-graduate @ Georgia Institute of Technology. Professional PHP Consultant. Professional Web Consultant. Clean Code evangelist. Test-Driven Development evangelist. Domain-Driven Design evangelist.  Short bio Don B. Stringham is a Technical Lead at ICS and FamilySearch, International. He started programming in C and Assembly in 1989. Started coding web applications in PHP in 2007.</description>
     </item>
     
     <item>
@@ -285,46 +117,8 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
       <pubDate>Tue, 07 Apr 2015 14:34:48 -0600</pubDate>
       
       <guid>http://donbstringham.us/bookshelf/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Reading is one of the most important activities for successful developers and professionals in general. Finding the right book is not always easy, so I have shared a list of what is on my bookshelf in the hope it can help you find what you are looking for and inspire you to learn something new. ~Rafael Dohms&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div&gt;
-      &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;
-        .gr_grid_container {
-          /* customize grid container div here. eg: width: 500px; */
-        }
-
-        .gr_grid_book_container {
-          /* customize book cover container div here */
-          float: left;
-          width: 98px;
-          height: 160px;
-          padding: 0px 0px;
-          overflow: hidden;
-        }
-      &lt;/style&gt;
-&lt;/div&gt;
-      &lt;div id=&#34;gr_grid_widget_1464886518&#34;&gt;
-        &lt;!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work --&gt;
-            &lt;h2&gt;
-      &lt;a style=&#34;text-decoration: none;&#34; href=&#34;https://www.goodreads.com/review/list/7374029-don?shelf=software-engineering&amp;utm_medium=api&amp;utm_source=grid_widget&#34;&gt;Don&#39;s software-engineering Books&lt;/a&gt;
-    &lt;/h2&gt;
-  &lt;div class=&#34;gr_grid_container&#34;&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation&#34; href=&#34;https://www.goodreads.com/book/show/8686650-continuous-delivery&#34;&gt;&lt;img alt=&#34;Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1347640457m/8686650.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Vagrant: Up and Running&#34; href=&#34;https://www.goodreads.com/book/show/17152732-vagrant&#34;&gt;&lt;img alt=&#34;Vagrant: Up and Running&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1356349756m/17152732.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;JavaScript for PHP Developers&#34; href=&#34;https://www.goodreads.com/book/show/13355766-javascript-for-php-developers&#34;&gt;&lt;img alt=&#34;JavaScript for PHP Developers&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1344729047m/13355766.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;In the Plex: How Google Thinks, Works, and Shapes Our Lives&#34; href=&#34;https://www.goodreads.com/book/show/7841446-in-the-plex&#34;&gt;&lt;img alt=&#34;In the Plex: How Google Thinks, Works, and Shapes Our Lives&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1442810207m/7841446.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;I&#39;m Feeling Lucky: The Confessions of Google Employee Number 59&#34; href=&#34;https://www.goodreads.com/book/show/9871673-i-m-feeling-lucky&#34;&gt;&lt;img alt=&#34;I&#39;m Feeling Lucky: The Confessions of Google Employee Number 59&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1438696440m/9871673.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Implementing Domain-Driven Design&#34; href=&#34;https://www.goodreads.com/book/show/15756865-implementing-domain-driven-design&#34;&gt;&lt;img alt=&#34;Implementing Domain-Driven Design&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1342552108m/15756865.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Clean Code: A Handbook of Agile Software Craftsmanship&#34; href=&#34;https://www.goodreads.com/book/show/3735293-clean-code&#34;&gt;&lt;img alt=&#34;Clean Code: A Handbook of Agile Software Craftsmanship&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1436202607m/3735293.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;The Pragmatic Programmer: From Journeyman to Master&#34; href=&#34;https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer&#34;&gt;&lt;img alt=&#34;The Pragmatic Programmer: From Journeyman to Master&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1401432508m/4099.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Refactoring: Improving the Design of Existing Code&#34; href=&#34;https://www.goodreads.com/book/show/44936.Refactoring&#34;&gt;&lt;img alt=&#34;Refactoring: Improving the Design of Existing Code&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1386925632m/44936.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;div class=&#34;gr_grid_book_container&#34;&gt;&lt;a title=&#34;Domain-Driven Design: Tackling Complexity in the Heart of Software&#34; href=&#34;https://www.goodreads.com/book/show/179133.Domain_Driven_Design&#34;&gt;&lt;img alt=&#34;Domain-Driven Design: Tackling Complexity in the Heart of Software&#34; border=&#34;0&#34; src=&#34;https://d.gr-assets.com/books/1287493789m/179133.jpg&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-    &lt;br style=&#34;clear: both&#34;/&gt;&lt;br/&gt;&lt;a class=&#34;gr_grid_branding&#34; style=&#34;font-size: .9em; color: #382110; text-decoration: none; float: right; clear: both&#34; href=&#34;https://www.goodreads.com/user/show/7374029-don&#34;&gt;Don&#39;s favorite books »&lt;/a&gt;
-  &lt;noscript&gt;&lt;br/&gt;Share &lt;a href=&#34;http://donbstringham.us/&#34;&gt;book reviews&lt;/a&gt; and ratings with Don, and even join a &lt;a href=&#34;http://donbstringham.us/group&#34;&gt;book club&lt;/a&gt; on Goodreads.&lt;/noscript&gt;
-  &lt;/div&gt;
-</description>
+      <description>Reading is one of the most important activities for successful developers and professionals in general. Finding the right book is not always easy, so I have shared a list of what is on my bookshelf in the hope it can help you find what you are looking for and inspire you to learn something new. ~Rafael Dohms
+  .gr_grid_container { /* customize grid container div here. eg: width: 500px; */ } .</description>
     </item>
     
     <item>
@@ -333,187 +127,110 @@ PDO drivers =&amp;gt; oci, odbc, sqlite
       <pubDate>Tue, 07 Apr 2015 14:34:48 -0600</pubDate>
       
       <guid>http://donbstringham.us/resume/</guid>
-      <description>
-
-&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;donbstringham at gmail dot com&lt;/li&gt;
-&lt;li&gt;@donbstringham&lt;/li&gt;
-&lt;li&gt;+1 (801) 205-3157&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Years&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Degree - Institute&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;2015 - 2017 (expected)&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;MS, CS&lt;/strong&gt;; Georgia Institute of Technology (Atlanta, GA)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;1991 - 1994&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;BS, Computer Science&lt;/strong&gt;; Weber State University (Ogden, UT)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;1990 - 1991&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;AS, Computer Science&lt;/strong&gt;: Utah Valley University (Orem, UT)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Years&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Company - Position&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;2012 - current&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;FamilySearch, Intl.&lt;/strong&gt;; Technical Lead (Riverton, UT)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;2005 - 2012&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;FamilySearch, Intl.&lt;/strong&gt;; Senior Software Engineer (Salt Lake City, UT)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;1996 - 2005&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;FamilySearch, Intl.&lt;/strong&gt;; Software Engineer (Salt Lake City, UT)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;1991 - 1996&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;strong&gt;Access Software/Microsoft&lt;/strong&gt;; Software Programmer (Salt Lake City, UT)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h2 id=&#34;technical-experience&#34;&gt;Technical Experience&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Type&lt;/th&gt;
-&lt;th align=&#34;left&#34;&gt;Qualifications&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Open Source&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Mediawiki, Inc. Wikipedia.; Sublime Text 2 Plugin&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Programming Languages&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;ASM, C, C++, Java, Javascript, PHP, Python&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Markup Languages&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;CSS3, HTML5, JSON, XML, Markdown&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Databases&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;MySQL5, Sqlite, Experience with Oracle and SqlServer.&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Operating Systems&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Linux (Debian, Ubuntu, RHEL, CentOS), Windows &amp;lt;= 7&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Stacks/Frameworks&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;(M)&lt;strong&gt;L&lt;/strong&gt;AMP, NodeJS, PhalconPHP, Yii, Symphony, Silex&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
+      <description>Contact Information  donbstringham at gmail dot com @donbstringham +1 (801) 205-3157  Education    Years Degree - Institute     2015 - 2017 (expected) MS, CS; Georgia Institute of Technology (Atlanta, GA)   1991 - 1994 BS, Computer Science; Weber State University (Ogden, UT)   1990 - 1991 AS, Computer Science: Utah Valley University (Orem, UT)    Experience    Years Company - Position     2012 - current FamilySearch, Intl.</description>
     </item>
     
     <item>
       <title>Composer Autoloading</title>
-      <link>http://donbstringham.us/blog/2015-03-30-composer-autoloading/</link>
+      <link>http://donbstringham.us/post/2015-03-31-composer-autoloading/</link>
       <pubDate>Mon, 30 Mar 2015 09:05:00 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-30-composer-autoloading/</guid>
-      <description>&lt;p&gt;*Composer &lt;strong&gt;Autoloading&lt;/strong&gt; Not Just for Vendor Files*&lt;/p&gt;
-
-&lt;p&gt;Teacher can and should learn from students!  That is one of the things I find very satisfying about being an adjunct professor at Weber State University.  The fact that I can learn new and usual things from those I teach.  Last night was one of those times.&lt;/p&gt;
-
-&lt;p&gt;In fielding questions about a PHP project a comment came up about multiple autoloaders.  In the first project I had the students create their own autoloader.  This project I required them to use composer to manage and load dependencies.  One student mentioned he had found how to use the composer autoloader to load his classes.  Now I had known in the past that composer supported &lt;a href=&#34;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md&#34;&gt;PSR-0&lt;/a&gt; but didn&amp;rsquo;t fully understand it.    So to my surprise I learned that composer now supports &lt;a href=&#34;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md&#34;&gt;PSR-4&lt;/a&gt; and is very easy to use.  Here is a code snippet of the a portion of the &lt;code&gt;composer.json&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;quot;autoload&amp;quot;: {
-	&amp;quot;psr-4&amp;quot;: {
-		&amp;quot;Common\\&amp;quot;: &amp;quot;src/Common/&amp;quot;,
-        &amp;quot;Domain\\&amp;quot;: &amp;quot;src/Domain/&amp;quot;
-   }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then to use the autoloader and namespaces in code you would use a PHP statement like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;require_once __DIR__.&#39;/vendor/autoload.php&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To optimized the autoloader you can use this command: &lt;code&gt;composer dumpautoload -o&lt;/code&gt;.  There is a downside to this, though.  You will need to re-run this every time a new class is added, in addition to whenever the composer &lt;code&gt;install&lt;/code&gt; or &lt;code&gt;update&lt;/code&gt; commands are used.  Needless to say this is a small price to pay for roughly a 40% performance increase.&lt;/p&gt;
-
-&lt;p&gt;This is another great usage of composer.  A tool PHP developers should be using a lot more.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://getcomposer.org/doc/04-schema.md&#34;&gt;Composer JSON Schema&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jessesnet.com/development-notes/2014/php-composer-autoloading/&#34;&gt;PHP Composer Autoloading&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://mouf-php.com/optimizing-composer-autoloader-performance&#34;&gt;Optimizing Composer&amp;rsquo;s autoloader performance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-31-composer-autoloading/</guid>
+      <description>*Composer Autoloading Not Just for Vendor Files*
+Teacher can and should learn from students! That is one of the things I find very satisfying about being an adjunct professor at Weber State University. The fact that I can learn new and usual things from those I teach. Last night was one of those times.
+In fielding questions about a PHP project a comment came up about multiple autoloaders. In the first project I had the students create their own autoloader.</description>
     </item>
     
     <item>
       <title>Implementing Satis</title>
-      <link>http://donbstringham.us/blog/2015-03-12-implementing-satis/</link>
+      <link>http://donbstringham.us/post/2015-03-12-implementing-satis/</link>
       <pubDate>Thu, 12 Mar 2015 09:05:00 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-12-implementing-satis/</guid>
-      <description>&lt;p&gt;Implementing a local Packagist with &lt;strong&gt;Satis&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Many large companies, including the one I am currently working for &lt;a href=&#34;http://familysearch.org&#34;&gt;FamilySearch, Intl.&lt;/a&gt;, operate many servers that do not have connectivity to the internet at large.  In other words, they cannot reach &lt;a href=&#34;https://packagist.org/&#34;&gt;Packagist&lt;/a&gt; rendering using &lt;a href=&#34;https://getcomposer.org&#34;&gt;composer&lt;/a&gt; useless.  Luckily, the developers at &lt;em&gt;composer&lt;/em&gt; have provided a solution to the above problem, &lt;a href=&#34;https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md&#34;&gt;private packages&lt;/a&gt;.  I had been using &lt;em&gt;composer&lt;/em&gt; for awhile but was un-aware of &lt;strong&gt;Satis&lt;/strong&gt; or &lt;strong&gt;Toran Proxy&lt;/strong&gt; until I attend Rafael Dohms &lt;a href=&#34;http://www.slideshare.net/rdohms/composer-the-right-way&#34;&gt;Composer: The Right Way&lt;/a&gt; at php[world] 2014 in Washington, D.C.  It took a couple of months of getting priorities off my plate but here is what I have learned implementing Satis for the EMS 2.x (Event Management System) for ICS.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-12-implementing-satis/</guid>
+      <description>Implementing a local Packagist with Satis
+Many large companies, including the one I am currently working for FamilySearch, Intl., operate many servers that do not have connectivity to the internet at large. In other words, they cannot reach Packagist rendering using composer useless. Luckily, the developers at composer have provided a solution to the above problem, private packages. I had been using composer for awhile but was un-aware of Satis or Toran Proxy until I attend Rafael Dohms Composer: The Right Way at php[world] 2014 in Washington, D.</description>
     </item>
     
     <item>
       <title>Optimizing the realpath_cache</title>
-      <link>http://donbstringham.us/blog/2015-03-09-optimizing-the-realpath_cache/</link>
+      <link>http://donbstringham.us/post/2015-03-09-optimizing-realpath_cache/</link>
       <pubDate>Mon, 09 Mar 2015 09:05:49 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-09-optimizing-the-realpath_cache/</guid>
-      <description>&lt;p&gt;Better PHP performance by optimizing &lt;em&gt;realpath_cache&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;System calls are big performance hits on an OS.  Systems calls typically lead to context switches in which the CPU state is saved and retrieved during which kernal code in the CPU pipeline.  Anyways, filesystem access definitely uses system calls in an OS.  PHP does that a lot especially during &lt;em&gt;include&lt;/em&gt;, &lt;em&gt;require&lt;/em&gt;, &lt;em&gt;include_one&lt;/em&gt; and &lt;em&gt;require_once&lt;/em&gt;.  Anytime a file is accessed PHP will issue a &lt;code&gt;realpath&lt;/code&gt; call.  This call asks the system for path information mainly using the the &lt;code&gt;lstat&lt;/code&gt; system call.  To help improve performance &lt;code&gt;realpath&lt;/code&gt; will put the returned information into a cache.&lt;/p&gt;
-
-&lt;p&gt;To see the data in the &lt;code&gt;realpath&lt;/code&gt; cache you can use the PHP function &lt;code&gt;realpath_cache_get()&lt;/code&gt; which will show you an array path information.  Even with a simple script you can get up to a dozen entries.  For small to medium sized PHP applications the defaults for the cache will be fine.  But if you are using a framework and/or builing an enterprise PHP application the cache size can quickly run out.  It is good practice to add &lt;code&gt;realpath_cache_size = 1024k&lt;/code&gt; to the &lt;em&gt;php.ini&lt;/em&gt; to ensure the cache is large enough to hold all the path entries.&lt;/p&gt;
-
-&lt;p&gt;Another issue with &lt;code&gt;realpath_cache&lt;/code&gt; is that TTL (time to live) is defaulted to two minutes.  Again for a small, short running script that is fine but for a medium to large application, one that is longer running the TTL is too short.  A good practice is to add the line &lt;code&gt;realpath_cache_ttl = 360&lt;/code&gt; to the &lt;em&gt;php.ini&lt;/em&gt; thereby keeping the path information in the cache a lot longer.&lt;/p&gt;
-
-&lt;p&gt;These two additions to &lt;em&gt;php.ini&lt;/em&gt; should ensure better performance in your medium to large PHP web and client applications.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-09-optimizing-realpath_cache/</guid>
+      <description>Better PHP performance by optimizing realpath_cache!
+System calls are big performance hits on an OS. Systems calls typically lead to context switches in which the CPU state is saved and retrieved during which kernal code in the CPU pipeline. Anyways, filesystem access definitely uses system calls in an OS. PHP does that a lot especially during include, require, include_one and require_once. Anytime a file is accessed PHP will issue a realpath call.</description>
+    </item>
+    
+    <item>
+      <title>HTML Signatures in Apple Mail</title>
+      <link>http://donbstringham.us/post/2015-03-06-html-signatures-in-apple-mail/</link>
+      <pubDate>Fri, 06 Mar 2015 17:50:49 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/post/2015-03-06-html-signatures-in-apple-mail/</guid>
+      <description>Short, concise and good looking HTML email signatures!
+Though there are quite a few of email applications for the Mac OSX none of them combine all the email accounts into one. I mean they don&amp;rsquo;t work with my work email stringhamdb@familysearch.org while working with my personal and schools emails or vice versa. The only one that does is Apple Mail. The email signature feature in Apple Mail is very limited and this post is a way to work around that.</description>
+    </item>
+    
+    <item>
+      <title>Linux PHP Daemon</title>
+      <link>http://donbstringham.us/post/2015-01-13-linux-php-daemon/</link>
+      <pubDate>Tue, 13 Jan 2015 17:50:49 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/post/2015-01-13-linux-php-daemon/</guid>
+      <description>Better than a crontab!
+Many a time have my development team needed to &amp;ldquo;cronify&amp;rdquo; a PHP script for completing business logic quietly behind the scenes. Once the command-line (CLI) version of the application was complete they would start creating and managing a crontab. This practice is NO MORE for my development teams!
+Enter a better way of &amp;ldquo;cronifying&amp;rdquo; or better stated &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application. I have created a sample of &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application at https://github.</description>
+    </item>
+    
+    <item>
+      <title>Service Locator vs. Dependency Injection Container</title>
+      <link>http://donbstringham.us/post/2014-12-23-service-locator-vs-dependency-injection-container/</link>
+      <pubDate>Tue, 23 Dec 2014 22:47:30 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/post/2014-12-23-service-locator-vs-dependency-injection-container/</guid>
+      <description>I am NOT as crazy as I thought!
+Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about dependency injection altogether. Years ago I learned from Misko Hevery from Google that a service locator is really just global state or a bad singleton in sheep&amp;rsquo;s clothing. He states that a service locator violates the Law of Demeter and calls singletons are pathological liars.</description>
+    </item>
+    
+    <item>
+      <title>Personal CDN for Free</title>
+      <link>http://donbstringham.us/post/2014-12-17-personal-cdn-for-free/</link>
+      <pubDate>Wed, 17 Dec 2014 16:56:24 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/post/2014-12-17-personal-cdn-for-free/</guid>
+      <description>Use Google Apps for a free personal CDN:
+So with some personal branding on a few websites it became apparent that my life would be much simpler if I had a personal CDN to store and share common files. After a little bit of research some CDN providers it became obvious that there are not many simple or FREE personal CDN solutions out there. So I googled &amp;ldquo;personal cdn&amp;rdquo; and the first link was magical!</description>
+    </item>
+    
+    <item>
+      <title>DDD in PHP Experiment</title>
+      <link>http://donbstringham.us/post/2014-12-11-ddd-in-php-experiment/</link>
+      <pubDate>Thu, 11 Dec 2014 12:52:29 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/post/2014-12-11-ddd-in-php-experiment/</guid>
+      <description>Domain-Driven Design in PHP Experiment and Project Seed
+A current and difficult software development project has recently sent me scurrying for answers. In that search I&amp;rsquo;ve rediscovered the book Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans. In addition to re-reading the book and reviewing a handful of slide-decks at SlideShare; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.</description>
+    </item>
+    
+    <item>
+      <title>Semantic Versioning</title>
+      <link>http://donbstringham.us/post/2014-12-08-semantic-versioning/</link>
+      <pubDate>Mon, 08 Dec 2014 11:10:52 -0700</pubDate>
+      
+      <guid>http://donbstringham.us/post/2014-12-08-semantic-versioning/</guid>
+      <description>We should all be using Semantic Versioning:
+During this November I attended the PHP[WORLD] 2014 conference in Washington, D.C. To say that it was a beneficial conference would be an understatement. It seemed that valuable information was being shared at every corner. One of those gems is semantic versioning. This topic came up during a session on how to use PHP Composer by Rafael Dohms.
+Semantic versioning uses the familiar format xx.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>http://donbstringham.us/license/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://donbstringham.us/license/</guid>
+      <description>The MIT License (MIT) Copyright &amp;copy; 2016 Don B. Stringham
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
     </item>
     
   </channel>

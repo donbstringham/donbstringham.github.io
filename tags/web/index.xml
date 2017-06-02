@@ -1,57 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>donbstringham</title>
-    <link>http://donbstringham.us/tags/web/index.xml</link>
-    <description>Recent content on donbstringham</description>
+    <title>Web on donbstringham</title>
+    <link>http://donbstringham.us/tags/web/</link>
+    <description>Recent content in Web on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://donbstringham.us/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 17 Dec 2014 16:56:24 -0700</lastBuildDate>
+    
+	<atom:link href="http://donbstringham.us/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Personal CDN for Free</title>
-      <link>http://donbstringham.us/blog/2014-12-17-personal-cdn-for-free/</link>
+      <link>http://donbstringham.us/post/2014-12-17-personal-cdn-for-free/</link>
       <pubDate>Wed, 17 Dec 2014 16:56:24 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2014-12-17-personal-cdn-for-free/</guid>
-      <description>&lt;p&gt;Use Google Apps for a free personal CDN:&lt;/p&gt;
-
-&lt;p&gt;So with some personal branding on a few websites it became apparent that my life would be much simpler if I had a personal CDN to store and share common files.  After a little bit of research some CDN providers it became obvious that there are not many simple or FREE personal CDN solutions out there.  So I googled &amp;ldquo;personal cdn&amp;rdquo; and the first &lt;a href=&#34;https://brandonb.io/use-google-app-engine-as-your-own-personal-cdn&#34;&gt;link&lt;/a&gt; was magical!  A simple posting by Brandon Brown explained how the Google App Engine can be used for your very own personal CDN.  You can read his blog post but here I will describe the process I went through.&lt;/p&gt;
-
-&lt;p&gt;After following Brandon&amp;rsquo;s advice in the &lt;code&gt;app.yaml&lt;/code&gt; file I added a &lt;code&gt;files/&lt;/code&gt; and &lt;code&gt;img/&lt;/code&gt; directory as well as and &lt;code&gt;index
-.html&lt;/code&gt; if someone actually hits &lt;a href=&#34;http://donbstringham-cdn.appspot.com/&#34;&gt;http://donbstringham-cdn.appspot.com/&lt;/a&gt;.  So now the
-configuration file looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;application: donbstringham.us
-version: 1
-api_version: 1
-threadsafe: true
-runtime: python27
-
-handlers:
-- url: /css
-static_dir: css
-mime_type: text/css
-
-- url: /js
-static_dir: js
-mime_type: text/javascript
-
-- url: /img
-static_dir: img
-
-- url: /files
-static_dir: files
-
-- url: /.*
-static_files: index.html
-upload: index.html
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It took me about one hour to setup and configure Google Apps as a personal CDN.  So now I use this personal CDN for
-static content on a couple of personal websites as well as fonts and images for my various email signatures.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2014-12-17-personal-cdn-for-free/</guid>
+      <description>Use Google Apps for a free personal CDN:
+So with some personal branding on a few websites it became apparent that my life would be much simpler if I had a personal CDN to store and share common files. After a little bit of research some CDN providers it became obvious that there are not many simple or FREE personal CDN solutions out there. So I googled &amp;ldquo;personal cdn&amp;rdquo; and the first link was magical!</description>
     </item>
     
   </channel>

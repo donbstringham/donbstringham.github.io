@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>donbstringham</title>
-    <link>http://donbstringham.us/tags/ddd/index.xml</link>
-    <description>Recent content on donbstringham</description>
+    <title>Ddd on donbstringham</title>
+    <link>http://donbstringham.us/tags/ddd/</link>
+    <description>Recent content in Ddd on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://donbstringham.us/tags/ddd/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 11 Dec 2014 12:52:29 -0700</lastBuildDate>
+    
+	<atom:link href="http://donbstringham.us/tags/ddd/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>DDD in PHP Experiment</title>
-      <link>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</link>
+      <link>http://donbstringham.us/post/2014-12-11-ddd-in-php-experiment/</link>
       <pubDate>Thu, 11 Dec 2014 12:52:29 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</guid>
-      <description>&lt;p&gt;Domain-Driven Design in PHP Experiment and Project Seed&lt;/p&gt;
-
-&lt;p&gt;A current and difficult software development project has recently sent me scurrying for answers.  In that search I&amp;rsquo;ve rediscovered the book &lt;a href=&#34;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&amp;amp;qid=1418357436&amp;amp;sr=8-1&amp;amp;keywords=domain+driven+design&#34;&gt;Domain-Driven Design: Tackling Complexity in the Heart of Software&lt;/a&gt; by Eric Evans.  In addition to re-reading the book and reviewing a handful of slide-decks at &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;SlideShare&lt;/a&gt;; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.  So I have started a &lt;a href=&#34;https://github.com/stringhamdb/d3x&#34;&gt;Github project&lt;/a&gt; to test out the implementation differences.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;First, I am looking at the differences in the persistence and database access (DBAL) components in the infrastructure layer.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;For example one question that needs to be answered is should a DataMapper reside in the Domain or Infrastructure layer.&lt;/li&gt;
-&lt;li&gt;Another is should the DataMapper be implemented following the pattern religiously or with application specific variations.&lt;/li&gt;
-&lt;li&gt;Is it really a DataMapper or is it better called a DomainMapper that then uses TableDataGateways and RowDataGateways to read from persistence storage?&lt;/li&gt;
-&lt;li&gt;Is there a DataMapper class in the infrastructure layer that communicates with the DomainMapper in the domain layer?  That these two objects can pull from multiple tables using SQL and create a single entity or a single aggregate entity.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Second, I am looking at the differences in how domain classes versus infrastructure classes are constructed via factories.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Which factory pattern is a best practice?&lt;/li&gt;
-&lt;li&gt;If the factory method pattern is the best practice should it be implemented religiously or with variations?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Thirdly, where can I use things like &lt;code&gt;memcached&lt;/code&gt; or an op-code cache to improve the performance of large data sets.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Data sets such as a repository might easily grow beyond a thousand aggregate  root entities with maybe over tens times that in regular entities.&lt;/li&gt;
-&lt;li&gt;Large data sets could easily cause the database syndrome known as &amp;lsquo;death by a thousand cuts&amp;rsquo; meaning that a repository during a load process could easily ask the infrastructure layer to make a lot of database calls bringing the server to it&amp;rsquo;s knees.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anyways, it should turn into a great learning experience.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2014-12-11-ddd-in-php-experiment/</guid>
+      <description>Domain-Driven Design in PHP Experiment and Project Seed
+A current and difficult software development project has recently sent me scurrying for answers. In that search I&amp;rsquo;ve rediscovered the book Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans. In addition to re-reading the book and reviewing a handful of slide-decks at SlideShare; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.</description>
     </item>
     
   </channel>

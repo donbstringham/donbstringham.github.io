@@ -1,96 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>donbstringham</title>
-    <link>http://donbstringham.us/tags/pdo/index.xml</link>
-    <description>Recent content on donbstringham</description>
+    <title>Pdo on donbstringham</title>
+    <link>http://donbstringham.us/tags/pdo/</link>
+    <description>Recent content in Pdo on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://donbstringham.us/tags/pdo/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 22 Apr 2015 11:10:52 -0700</lastBuildDate>
+    
+	<atom:link href="http://donbstringham.us/tags/pdo/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Install Oracle PHP PDO Driver</title>
-      <link>http://donbstringham.us/blog/2015-04-22-install-oracle-php-pdo-driver/</link>
+      <link>http://donbstringham.us/post/2015-04-22-php-pdo-oci/</link>
       <pubDate>Wed, 22 Apr 2015 11:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-22-install-oracle-php-pdo-driver/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Instructions for installing Oracle PHP PDO driver on CentOS/RHEL&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Download Oracle InstantClient RPM files &lt;a href=&#34;http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html&#34;&gt;here&lt;/a&gt;. Put these files in your server. Download the basic and devel packages.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Install the downloaded rpm files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm
-$ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
-$ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client
-$ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create a file inside &lt;code&gt;/etc/profile.d&lt;/code&gt; named &lt;code&gt;oracle.sh&lt;/code&gt; and put this as the content:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And run it so we’ll have &lt;code&gt;LD_LIBRARY_PATH&lt;/code&gt; as an environment variable.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;source /etc/profile.d/oracle.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Download the PDO_OCI source using pecl.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pecl download PDO_OCI
-$ tar -xvf PDO_OCI-1.0.tgz
-$ cd PDO_OCI-1.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Inside the PDO_OCI-1.0 folder, edit the file named &lt;code&gt;config.m4&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Find a pattern like this near line 10 and add these 2 lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;elif test -f $PDO_OCI_DIR/lib/libclntsh.$SHLIB_SUFFIX_NAME.12.1; then
-  PDO_OCI_VERSION=12.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Find a pattern like this near line 101 and add these lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;12.1)
-  PHP_ADD_LIBRARY(clntsh, 1, PDO_OCI_SHARED_LIBADD)
-  ;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Build and install the extension.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ phpize
-$ ./configure --with-pdo-oci=instantclient,/usr,12.1
-$ make
-$ sudo make install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you see the compilation error:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;quot;pdo_oci.c:34: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘pdo_oci_functions’&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To solve it just change &lt;code&gt;function_entry&lt;/code&gt; to &lt;code&gt;zend_function_entry&lt;/code&gt; around line 34.&lt;/p&gt;
-
-&lt;p&gt;To enable the extension, add a file named &lt;code&gt;pdo_oci.ini&lt;/code&gt; under &lt;code&gt;/etc/php.d&lt;/code&gt; and put this as the content:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;extension=pdo_oci.so
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Validate that it was successfully installed.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ php -i | grep oci&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You should see something like this in the output:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/etc/php.d/pdo_oci.ini,
-PDO drivers =&amp;gt; oci, odbc, sqlite
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-22-php-pdo-oci/</guid>
+      <description>Instructions for installing Oracle PHP PDO driver on CentOS/RHEL
+Download Oracle InstantClient RPM files here. Put these files in your server. Download the basic and devel packages.
+ Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm  Install the downloaded rpm files:
+$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm $ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm $ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client $ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client  Create a file inside /etc/profile.d named oracle.sh and put this as the content:</description>
     </item>
     
   </channel>

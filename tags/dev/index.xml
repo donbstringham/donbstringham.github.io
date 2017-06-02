@@ -1,46 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>donbstringham</title>
-    <link>http://donbstringham.us/tags/dev/index.xml</link>
-    <description>Recent content on donbstringham</description>
+    <title>Dev on donbstringham</title>
+    <link>http://donbstringham.us/tags/dev/</link>
+    <description>Recent content in Dev on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://donbstringham.us/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 16 Oct 2016 14:31:00 -0600</lastBuildDate>
+    
+	<atom:link href="http://donbstringham.us/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Why I Switched To Golang!</title>
-      <link>http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/</link>
+      <link>http://donbstringham.us/post/2016-10-16-why-i-switched-to-go/</link>
       <pubDate>Sun, 16 Oct 2016 14:31:00 -0600</pubDate>
       
-      <guid>http://donbstringham.us/blog/2016-10-16-why-i-switched-to-golang/</guid>
+      <guid>http://donbstringham.us/post/2016-10-16-why-i-switched-to-go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development With Docker</title>
-      <link>http://donbstringham.us/blog/2016-06-05-development-with-docker/</link>
+      <link>http://donbstringham.us/post/2016-06-05-dev-with-docker/</link>
       <pubDate>Sun, 05 Jun 2016 19:35:16 -0600</pubDate>
       
-      <guid>http://donbstringham.us/blog/2016-06-05-development-with-docker/</guid>
-      <description>&lt;p&gt;Being a developer for over two decades I am always looking for new ways to improve and simplify my workflow.  Recently, I&amp;rsquo;ve moved to &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; which is a wrapper around virtual machine players such as &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;Virtual Box&lt;/a&gt;, &lt;a href=&#34;http://www.vmware.com/products/fusion.html&#34;&gt;VMWare Fusion&lt;/a&gt; and such.  The most current tool that fits the bill, though is &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt;.  It is such a great tool that I have removed Vagrant and all virtual machine players from my development Macbook Pro!&lt;/p&gt;
-
-&lt;p&gt;Docker allows you to develop, build, deploy/ship and run applications all in the same container across all of your environments no matter what type they are.  It is a tool for your whole organization.  As a developer here are a few reasons I use it:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Consistent development environments for the entire team.  Everyone uses the same OS, libraries, languages, runtimes no matter what host operating system they are using.&lt;/li&gt;
-&lt;li&gt;Less &lt;em&gt;&amp;ldquo;It works on my machine&amp;rdquo;&lt;/em&gt; because the development environment is the exact same as production.  Meaning it&amp;rsquo;ll &lt;em&gt;&amp;ldquo;just work&amp;rdquo;&lt;/em&gt; in production because you deploy containers!&lt;/li&gt;
-&lt;li&gt;You only need Docker and an IDE or editor to develop.  No need to install many language environments on your machine.  For example, want to run a PHP script but don&amp;rsquo;t have a PHP version installed?  Run it in a PHP image.&lt;/li&gt;
-&lt;li&gt;QA can test the application with multiple language versions without have to resort to hacks for the language (python, php, ruby, java, node.js, golang).&lt;/li&gt;
-&lt;li&gt;Deployment is simplified.  If it runs in the container on the build machine it will run on the production server just the same.  Package the application with the Docker image and push the image to the production server to run the new image.&lt;/li&gt;
-&lt;li&gt;Developers can still use their favorite editor/IDE and tools one would normally do.  No more need for running a VM in VirtualBox and SSHing and developing from the shell.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There are plenty of websites on how to use Docker for Developerment.  Here are two of them &lt;a href=&#34;https://medium.com/iron-io-blog/why-and-how-to-use-docker-for-development-a156c1de3b24#.14iw16utk&#34;&gt;Why and How to Use Docker for Development&lt;/a&gt; and &lt;a href=&#34;https://denibertovic.com/talks/supercharge-development-env-using-docker/#/&#34;&gt;Supercharge Your Development Environment (Using Docker)&lt;/a&gt;!  If you prefer books the only one I can really suggest is (Docker for Developers)[&lt;a href=&#34;https://leanpub.com/dockerfordevs&#34;&gt;https://leanpub.com/dockerfordevs&lt;/a&gt;] by &lt;a href=&#34;https://leanpub.com/u/ctankersley&#34;&gt;Chris Tankersley&lt;/a&gt;.  It is a very well written book at a great price.&lt;/p&gt;
-
-&lt;p&gt;I guarantee that one you add/switch your development workflow with &lt;strong&gt;Docker&lt;/strong&gt; you wonder how you ever got along with out it.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2016-06-05-dev-with-docker/</guid>
+      <description>Being a developer for over two decades I am always looking for new ways to improve and simplify my workflow. Recently, I&amp;rsquo;ve moved to Vagrant which is a wrapper around virtual machine players such as Virtual Box, VMWare Fusion and such. The most current tool that fits the bill, though is Docker. It is such a great tool that I have removed Vagrant and all virtual machine players from my development Macbook Pro!</description>
     </item>
     
   </channel>

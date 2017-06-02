@@ -1,322 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>donbstringham</title>
-    <link>http://donbstringham.us/tags/php/index.xml</link>
-    <description>Recent content on donbstringham</description>
+    <title>Php on donbstringham</title>
+    <link>http://donbstringham.us/tags/php/</link>
+    <description>Recent content in Php on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://donbstringham.us/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 22 Apr 2015 11:10:52 -0700</lastBuildDate>
+    
+	<atom:link href="http://donbstringham.us/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Install Oracle PHP PDO Driver</title>
-      <link>http://donbstringham.us/blog/2015-04-22-install-oracle-php-pdo-driver/</link>
+      <link>http://donbstringham.us/post/2015-04-22-php-pdo-oci/</link>
       <pubDate>Wed, 22 Apr 2015 11:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-22-install-oracle-php-pdo-driver/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Instructions for installing Oracle PHP PDO driver on CentOS/RHEL&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Download Oracle InstantClient RPM files &lt;a href=&#34;http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html&#34;&gt;here&lt;/a&gt;. Put these files in your server. Download the basic and devel packages.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Install the downloaded rpm files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm
-$ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm
-$ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client
-$ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create a file inside &lt;code&gt;/etc/profile.d&lt;/code&gt; named &lt;code&gt;oracle.sh&lt;/code&gt; and put this as the content:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;export LD_LIBRARY_PATH=/usr/lib/oracle/12.1/client64/lib&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And run it so we’ll have &lt;code&gt;LD_LIBRARY_PATH&lt;/code&gt; as an environment variable.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;source /etc/profile.d/oracle.sh&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Download the PDO_OCI source using pecl.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ pecl download PDO_OCI
-$ tar -xvf PDO_OCI-1.0.tgz
-$ cd PDO_OCI-1.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Inside the PDO_OCI-1.0 folder, edit the file named &lt;code&gt;config.m4&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Find a pattern like this near line 10 and add these 2 lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;elif test -f $PDO_OCI_DIR/lib/libclntsh.$SHLIB_SUFFIX_NAME.12.1; then
-  PDO_OCI_VERSION=12.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Find a pattern like this near line 101 and add these lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;12.1)
-  PHP_ADD_LIBRARY(clntsh, 1, PDO_OCI_SHARED_LIBADD)
-  ;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Build and install the extension.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ phpize
-$ ./configure --with-pdo-oci=instantclient,/usr,12.1
-$ make
-$ sudo make install
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you see the compilation error:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;&amp;quot;pdo_oci.c:34: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘pdo_oci_functions’&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;To solve it just change &lt;code&gt;function_entry&lt;/code&gt; to &lt;code&gt;zend_function_entry&lt;/code&gt; around line 34.&lt;/p&gt;
-
-&lt;p&gt;To enable the extension, add a file named &lt;code&gt;pdo_oci.ini&lt;/code&gt; under &lt;code&gt;/etc/php.d&lt;/code&gt; and put this as the content:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;extension=pdo_oci.so
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Validate that it was successfully installed.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;$ php -i | grep oci&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;You should see something like this in the output:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/etc/php.d/pdo_oci.ini,
-PDO drivers =&amp;gt; oci, odbc, sqlite
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-22-php-pdo-oci/</guid>
+      <description>Instructions for installing Oracle PHP PDO driver on CentOS/RHEL
+Download Oracle InstantClient RPM files here. Put these files in your server. Download the basic and devel packages.
+ Basic: oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm Devel: oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm  Install the downloaded rpm files:
+$ sudo rpm -ivh oracle-instantclient12.1-basic-12.1.0.2.0-1.x86_64.rpm $ sudo rpm -ivh oracle-instantclient12.1-devel-12.1.0.2.0-1.x86_64.rpm $ sudo ln -s /usr/include/oracle/12.1/client64 /usr/include/oracle/12.1/client $ sudo ln -s /usr/lib/oracle/12.1/client64 /usr/lib/oracle/12.1/client  Create a file inside /etc/profile.d named oracle.sh and put this as the content:</description>
     </item>
     
     <item>
       <title>Building a PHAR for a PHP project</title>
-      <link>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</link>
+      <link>http://donbstringham.us/post/2015-04-21-building-a-phar/</link>
       <pubDate>Tue, 21 Apr 2015 11:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-21-building-a-phar-for-a-php-project/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Building a PHAR for a PHP project!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Some in the PHP community have said the PHP developers have too much Java envy.  I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it!  One of the practices that  I am glad that is now in PHP is the single PHAR archive for PHP applications.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-21-building-a-phar/</guid>
+      <description>Building a PHAR for a PHP project!
+Some in the PHP community have said the PHP developers have too much Java envy. I am not exactly sure what they mean. As long as PHP adopts good practices from Java development I am all for it! One of the practices that I am glad that is now in PHP is the single PHAR archive for PHP applications.</description>
     </item>
     
     <item>
       <title>PHAR&#39;s and file path&#39;s</title>
-      <link>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</link>
+      <link>http://donbstringham.us/post/2015-04-17-phar-and-file/</link>
       <pubDate>Fri, 17 Apr 2015 21:10:52 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-04-17-phars-and-file-paths/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Beware a PHAR requires absolute paths!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Hopefully, this post save a PHP developer some time.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-04-17-phar-and-file/</guid>
+      <description>Beware a PHAR requires absolute paths!
+Hopefully, this post save a PHP developer some time.</description>
     </item>
     
     <item>
       <title>Composer Autoloading</title>
-      <link>http://donbstringham.us/blog/2015-03-30-composer-autoloading/</link>
+      <link>http://donbstringham.us/post/2015-03-31-composer-autoloading/</link>
       <pubDate>Mon, 30 Mar 2015 09:05:00 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-30-composer-autoloading/</guid>
-      <description>&lt;p&gt;*Composer &lt;strong&gt;Autoloading&lt;/strong&gt; Not Just for Vendor Files*&lt;/p&gt;
-
-&lt;p&gt;Teacher can and should learn from students!  That is one of the things I find very satisfying about being an adjunct professor at Weber State University.  The fact that I can learn new and usual things from those I teach.  Last night was one of those times.&lt;/p&gt;
-
-&lt;p&gt;In fielding questions about a PHP project a comment came up about multiple autoloaders.  In the first project I had the students create their own autoloader.  This project I required them to use composer to manage and load dependencies.  One student mentioned he had found how to use the composer autoloader to load his classes.  Now I had known in the past that composer supported &lt;a href=&#34;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md&#34;&gt;PSR-0&lt;/a&gt; but didn&amp;rsquo;t fully understand it.    So to my surprise I learned that composer now supports &lt;a href=&#34;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md&#34;&gt;PSR-4&lt;/a&gt; and is very easy to use.  Here is a code snippet of the a portion of the &lt;code&gt;composer.json&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;quot;autoload&amp;quot;: {
-	&amp;quot;psr-4&amp;quot;: {
-		&amp;quot;Common\\&amp;quot;: &amp;quot;src/Common/&amp;quot;,
-        &amp;quot;Domain\\&amp;quot;: &amp;quot;src/Domain/&amp;quot;
-   }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then to use the autoloader and namespaces in code you would use a PHP statement like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;require_once __DIR__.&#39;/vendor/autoload.php&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To optimized the autoloader you can use this command: &lt;code&gt;composer dumpautoload -o&lt;/code&gt;.  There is a downside to this, though.  You will need to re-run this every time a new class is added, in addition to whenever the composer &lt;code&gt;install&lt;/code&gt; or &lt;code&gt;update&lt;/code&gt; commands are used.  Needless to say this is a small price to pay for roughly a 40% performance increase.&lt;/p&gt;
-
-&lt;p&gt;This is another great usage of composer.  A tool PHP developers should be using a lot more.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://getcomposer.org/doc/04-schema.md&#34;&gt;Composer JSON Schema&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jessesnet.com/development-notes/2014/php-composer-autoloading/&#34;&gt;PHP Composer Autoloading&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://mouf-php.com/optimizing-composer-autoloader-performance&#34;&gt;Optimizing Composer&amp;rsquo;s autoloader performance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-31-composer-autoloading/</guid>
+      <description>*Composer Autoloading Not Just for Vendor Files*
+Teacher can and should learn from students! That is one of the things I find very satisfying about being an adjunct professor at Weber State University. The fact that I can learn new and usual things from those I teach. Last night was one of those times.
+In fielding questions about a PHP project a comment came up about multiple autoloaders. In the first project I had the students create their own autoloader.</description>
     </item>
     
     <item>
       <title>Implementing Satis</title>
-      <link>http://donbstringham.us/blog/2015-03-12-implementing-satis/</link>
+      <link>http://donbstringham.us/post/2015-03-12-implementing-satis/</link>
       <pubDate>Thu, 12 Mar 2015 09:05:00 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-12-implementing-satis/</guid>
-      <description>&lt;p&gt;Implementing a local Packagist with &lt;strong&gt;Satis&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Many large companies, including the one I am currently working for &lt;a href=&#34;http://familysearch.org&#34;&gt;FamilySearch, Intl.&lt;/a&gt;, operate many servers that do not have connectivity to the internet at large.  In other words, they cannot reach &lt;a href=&#34;https://packagist.org/&#34;&gt;Packagist&lt;/a&gt; rendering using &lt;a href=&#34;https://getcomposer.org&#34;&gt;composer&lt;/a&gt; useless.  Luckily, the developers at &lt;em&gt;composer&lt;/em&gt; have provided a solution to the above problem, &lt;a href=&#34;https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md&#34;&gt;private packages&lt;/a&gt;.  I had been using &lt;em&gt;composer&lt;/em&gt; for awhile but was un-aware of &lt;strong&gt;Satis&lt;/strong&gt; or &lt;strong&gt;Toran Proxy&lt;/strong&gt; until I attend Rafael Dohms &lt;a href=&#34;http://www.slideshare.net/rdohms/composer-the-right-way&#34;&gt;Composer: The Right Way&lt;/a&gt; at php[world] 2014 in Washington, D.C.  It took a couple of months of getting priorities off my plate but here is what I have learned implementing Satis for the EMS 2.x (Event Management System) for ICS.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-12-implementing-satis/</guid>
+      <description>Implementing a local Packagist with Satis
+Many large companies, including the one I am currently working for FamilySearch, Intl., operate many servers that do not have connectivity to the internet at large. In other words, they cannot reach Packagist rendering using composer useless. Luckily, the developers at composer have provided a solution to the above problem, private packages. I had been using composer for awhile but was un-aware of Satis or Toran Proxy until I attend Rafael Dohms Composer: The Right Way at php[world] 2014 in Washington, D.</description>
     </item>
     
     <item>
       <title>Optimizing the realpath_cache</title>
-      <link>http://donbstringham.us/blog/2015-03-09-optimizing-the-realpath_cache/</link>
+      <link>http://donbstringham.us/post/2015-03-09-optimizing-realpath_cache/</link>
       <pubDate>Mon, 09 Mar 2015 09:05:49 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-09-optimizing-the-realpath_cache/</guid>
-      <description>&lt;p&gt;Better PHP performance by optimizing &lt;em&gt;realpath_cache&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;System calls are big performance hits on an OS.  Systems calls typically lead to context switches in which the CPU state is saved and retrieved during which kernal code in the CPU pipeline.  Anyways, filesystem access definitely uses system calls in an OS.  PHP does that a lot especially during &lt;em&gt;include&lt;/em&gt;, &lt;em&gt;require&lt;/em&gt;, &lt;em&gt;include_one&lt;/em&gt; and &lt;em&gt;require_once&lt;/em&gt;.  Anytime a file is accessed PHP will issue a &lt;code&gt;realpath&lt;/code&gt; call.  This call asks the system for path information mainly using the the &lt;code&gt;lstat&lt;/code&gt; system call.  To help improve performance &lt;code&gt;realpath&lt;/code&gt; will put the returned information into a cache.&lt;/p&gt;
-
-&lt;p&gt;To see the data in the &lt;code&gt;realpath&lt;/code&gt; cache you can use the PHP function &lt;code&gt;realpath_cache_get()&lt;/code&gt; which will show you an array path information.  Even with a simple script you can get up to a dozen entries.  For small to medium sized PHP applications the defaults for the cache will be fine.  But if you are using a framework and/or builing an enterprise PHP application the cache size can quickly run out.  It is good practice to add &lt;code&gt;realpath_cache_size = 1024k&lt;/code&gt; to the &lt;em&gt;php.ini&lt;/em&gt; to ensure the cache is large enough to hold all the path entries.&lt;/p&gt;
-
-&lt;p&gt;Another issue with &lt;code&gt;realpath_cache&lt;/code&gt; is that TTL (time to live) is defaulted to two minutes.  Again for a small, short running script that is fine but for a medium to large application, one that is longer running the TTL is too short.  A good practice is to add the line &lt;code&gt;realpath_cache_ttl = 360&lt;/code&gt; to the &lt;em&gt;php.ini&lt;/em&gt; thereby keeping the path information in the cache a lot longer.&lt;/p&gt;
-
-&lt;p&gt;These two additions to &lt;em&gt;php.ini&lt;/em&gt; should ensure better performance in your medium to large PHP web and client applications.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-09-optimizing-realpath_cache/</guid>
+      <description>Better PHP performance by optimizing realpath_cache!
+System calls are big performance hits on an OS. Systems calls typically lead to context switches in which the CPU state is saved and retrieved during which kernal code in the CPU pipeline. Anyways, filesystem access definitely uses system calls in an OS. PHP does that a lot especially during include, require, include_one and require_once. Anytime a file is accessed PHP will issue a realpath call.</description>
     </item>
     
     <item>
       <title>Linux PHP Daemon</title>
-      <link>http://donbstringham.us/blog/2015-01-13-linux-php-daemon/</link>
+      <link>http://donbstringham.us/post/2015-01-13-linux-php-daemon/</link>
       <pubDate>Tue, 13 Jan 2015 17:50:49 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-01-13-linux-php-daemon/</guid>
-      <description>
-
-&lt;p&gt;Better than a crontab!&lt;/p&gt;
-
-&lt;p&gt;Many a time have my development team needed to &amp;ldquo;cronify&amp;rdquo; a PHP script for completing
-business logic quietly behind the scenes.  Once the command-line (CLI) version of the
-application was complete they would start creating and managing a crontab.  This
-practice is &lt;strong&gt;NO MORE&lt;/strong&gt; for my development teams!&lt;/p&gt;
-
-&lt;p&gt;Enter a better way of &amp;ldquo;cronifying&amp;rdquo; or better stated &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application.
-I have created a sample of &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application at &lt;a href=&#34;https://github.com/donbstringham/php-daemon&#34;&gt;https://github.com/donbstringham/php-daemon&lt;/a&gt;.
-This example is based on an article by &lt;a href=&#34;http://blog.bobbyallen.me/2014/06/02/how-to-create-a-php-linux-daemon-service/&#34;&gt;Bobby Allen&lt;/a&gt;.
-Follow the directions below and now you have a linux system daemon that is actually a
-PHP command-line application.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/donbstringham/php-daemon/blob/master/php-daemon.conf&#34;&gt;php-daemon.conf&lt;/a&gt; - Place in the directory &lt;code&gt;/etc/init&lt;/code&gt;.  On line 9 in use the &lt;strong&gt;full path&lt;/strong&gt; to the PHP file.  It is &lt;strong&gt;very&lt;/strong&gt; important to use &lt;em&gt;fully qualified paths&lt;/em&gt; in both the &lt;a href=&#34;http://upstart.ubuntu.com/&#34;&gt;Upstart&lt;/a&gt; configuration file as well as any script files that &lt;a href=&#34;http://upstart.ubuntu.com/&#34;&gt;Upstart&lt;/a&gt; daemonizes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/donbstringham/php-daemon/blob/master/php-daemon.php&#34;&gt;php-daemon.php&lt;/a&gt; - Place in any directory you want.  Remember it to use &lt;em&gt;fully qualified paths&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Use the commands below to start, stop and view the status of the new linux daemon:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo status php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo start php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo stop php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While implementing this on CENTOS/RHEL boxes a few minor changes where needed to get it run in a stable manner.  The main change was to run the daemons under the &lt;code&gt;root&lt;/code&gt; user.  Other changes are listed below in the code:&lt;/p&gt;
-
-&lt;h5 id=&#34;etc-init-php-daemon-conf&#34;&gt;/etc/init/php-daemon.conf&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;start on startup
-stop on shutdown
-respawn
-
-script
-    echo &amp;quot;DEBUG: `set`&amp;quot; &amp;gt; /root/php-daemon-env.log
-
-    /root/php-daemon
-end script
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;home-stringhamdb-php-daemon&#34;&gt;/home/stringhamdb/php-daemon&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;#!/usr/bin/php
-&amp;lt;?php
-// The worker will execute every X seconds:
-$seconds = 1;
-
-// We work out the micro seconds ready to be used by the &#39;usleep&#39; function.
-$micro = $seconds * 1000000;
-
-while (true) {
-  // This is the code you want to loop during the service...
-  $fh = fopen(&#39;/root/php-daemon.log&#39;, &#39;a&#39;) or die(&#39;Can not open file&#39;);
-  $stringData = &#39;File updated at: &#39;.time().PHP_EOL;
-  fwrite($fh, $stringData);
-  fclose($fh);
-  // Now before we &#39;cycle&#39; again, we&#39;ll sleep for a bit...
-  usleep($micro);
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-01-13-linux-php-daemon/</guid>
+      <description>Better than a crontab!
+Many a time have my development team needed to &amp;ldquo;cronify&amp;rdquo; a PHP script for completing business logic quietly behind the scenes. Once the command-line (CLI) version of the application was complete they would start creating and managing a crontab. This practice is NO MORE for my development teams!
+Enter a better way of &amp;ldquo;cronifying&amp;rdquo; or better stated &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application. I have created a sample of &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application at https://github.</description>
     </item>
     
     <item>
       <title>Service Locator vs. Dependency Injection Container</title>
-      <link>http://donbstringham.us/blog/2014-12-23-service-locator-vs.-dependency-injection-container/</link>
+      <link>http://donbstringham.us/post/2014-12-23-service-locator-vs-dependency-injection-container/</link>
       <pubDate>Tue, 23 Dec 2014 22:47:30 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2014-12-23-service-locator-vs.-dependency-injection-container/</guid>
-      <description>&lt;p&gt;I am &lt;strong&gt;NOT&lt;/strong&gt; as crazy as I thought!&lt;/p&gt;
-
-&lt;p&gt;Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about &lt;a href=&#34;http://fabien.potencier.org/article/11/what-is-dependency-injection&#34;&gt;dependency injection&lt;/a&gt; altogether.  Years ago I learned from &lt;a href=&#34;http://misko.hevery.com/&#34;&gt;Misko Hevery&lt;/a&gt; from Google that a service locator is really just global state or a bad singleton in sheep&amp;rsquo;s clothing.  He states that a service locator violates the &lt;a href=&#34;http://en.wikipedia.org/wiki/Law_of_Demeter&#34;&gt;Law of Demeter&lt;/a&gt; and calls singletons are pathological liars.&lt;/p&gt;
-
-&lt;p&gt;Needless to say I have developed a bad taste for singletons and service locators.  So when I saw that many PHP projects had dependency injection containers (DIC) that were used as a service locator I became sick.  I discussed the issues with many PHP developers who didn&amp;rsquo;t seem to understand the negative issues that dependency injection containers create for testing and loosely-coupling.  That is when the second guessing started.  So I did some research on the internet and found only two others that felt the way I did.  Here are their links:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://adamcod.es/2013/11/25/service-locator-vs-dependency-injection-container.html&#34;&gt;Service Locator vs Dependency Injection Container (or Tell, Don&amp;rsquo;t Ask Part 2)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gnugat.github.io/2014/01/22/ioc-di-and-service-locator.html&#34;&gt;Inversion of Control, Dependency Injection, Dependency Injection Container and Service Locator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Basically, in my opinion, a service locator and dependency injection container are for all intents and purposes identical.  The difference is in how they are used.  Typically, a service locator is passed into a class which then asks the locator for a dependency.  A dependency injection container is used to get the dependencies and then pass them into the class that will use them.  Essentially, this is a similar view point that Adam Brett holds.  Read his article for code examples of both a service locator and dependency injection container.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2014-12-23-service-locator-vs-dependency-injection-container/</guid>
+      <description>I am NOT as crazy as I thought!
+Over the last few years of learning to incorporate Java-like patterns into my PHP development practices one area seemed to drive me crazy, almost to the point of second guessing myself about dependency injection altogether. Years ago I learned from Misko Hevery from Google that a service locator is really just global state or a bad singleton in sheep&amp;rsquo;s clothing. He states that a service locator violates the Law of Demeter and calls singletons are pathological liars.</description>
     </item>
     
     <item>
       <title>DDD in PHP Experiment</title>
-      <link>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</link>
+      <link>http://donbstringham.us/post/2014-12-11-ddd-in-php-experiment/</link>
       <pubDate>Thu, 11 Dec 2014 12:52:29 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2014-12-11-ddd-in-php-experiment/</guid>
-      <description>&lt;p&gt;Domain-Driven Design in PHP Experiment and Project Seed&lt;/p&gt;
-
-&lt;p&gt;A current and difficult software development project has recently sent me scurrying for answers.  In that search I&amp;rsquo;ve rediscovered the book &lt;a href=&#34;http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&amp;amp;qid=1418357436&amp;amp;sr=8-1&amp;amp;keywords=domain+driven+design&#34;&gt;Domain-Driven Design: Tackling Complexity in the Heart of Software&lt;/a&gt; by Eric Evans.  In addition to re-reading the book and reviewing a handful of slide-decks at &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;SlideShare&lt;/a&gt;; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.  So I have started a &lt;a href=&#34;https://github.com/stringhamdb/d3x&#34;&gt;Github project&lt;/a&gt; to test out the implementation differences.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;First, I am looking at the differences in the persistence and database access (DBAL) components in the infrastructure layer.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;For example one question that needs to be answered is should a DataMapper reside in the Domain or Infrastructure layer.&lt;/li&gt;
-&lt;li&gt;Another is should the DataMapper be implemented following the pattern religiously or with application specific variations.&lt;/li&gt;
-&lt;li&gt;Is it really a DataMapper or is it better called a DomainMapper that then uses TableDataGateways and RowDataGateways to read from persistence storage?&lt;/li&gt;
-&lt;li&gt;Is there a DataMapper class in the infrastructure layer that communicates with the DomainMapper in the domain layer?  That these two objects can pull from multiple tables using SQL and create a single entity or a single aggregate entity.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Second, I am looking at the differences in how domain classes versus infrastructure classes are constructed via factories.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Which factory pattern is a best practice?&lt;/li&gt;
-&lt;li&gt;If the factory method pattern is the best practice should it be implemented religiously or with variations?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Thirdly, where can I use things like &lt;code&gt;memcached&lt;/code&gt; or an op-code cache to improve the performance of large data sets.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Data sets such as a repository might easily grow beyond a thousand aggregate  root entities with maybe over tens times that in regular entities.&lt;/li&gt;
-&lt;li&gt;Large data sets could easily cause the database syndrome known as &amp;lsquo;death by a thousand cuts&amp;rsquo; meaning that a repository during a load process could easily ask the infrastructure layer to make a lot of database calls bringing the server to it&amp;rsquo;s knees.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anyways, it should turn into a great learning experience.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2014-12-11-ddd-in-php-experiment/</guid>
+      <description>Domain-Driven Design in PHP Experiment and Project Seed
+A current and difficult software development project has recently sent me scurrying for answers. In that search I&amp;rsquo;ve rediscovered the book Domain-Driven Design: Tackling Complexity in the Heart of Software by Eric Evans. In addition to re-reading the book and reviewing a handful of slide-decks at SlideShare; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.</description>
     </item>
     
   </channel>

@@ -1,87 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>donbstringham</title>
-    <link>http://donbstringham.us/tags/linux/index.xml</link>
-    <description>Recent content on donbstringham</description>
+    <title>Linux on donbstringham</title>
+    <link>http://donbstringham.us/tags/linux/</link>
+    <description>Recent content in Linux on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://donbstringham.us/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 13 Jan 2015 17:50:49 -0700</lastBuildDate>
+    
+	<atom:link href="http://donbstringham.us/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Linux PHP Daemon</title>
-      <link>http://donbstringham.us/blog/2015-01-13-linux-php-daemon/</link>
+      <link>http://donbstringham.us/post/2015-01-13-linux-php-daemon/</link>
       <pubDate>Tue, 13 Jan 2015 17:50:49 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-01-13-linux-php-daemon/</guid>
-      <description>
-
-&lt;p&gt;Better than a crontab!&lt;/p&gt;
-
-&lt;p&gt;Many a time have my development team needed to &amp;ldquo;cronify&amp;rdquo; a PHP script for completing
-business logic quietly behind the scenes.  Once the command-line (CLI) version of the
-application was complete they would start creating and managing a crontab.  This
-practice is &lt;strong&gt;NO MORE&lt;/strong&gt; for my development teams!&lt;/p&gt;
-
-&lt;p&gt;Enter a better way of &amp;ldquo;cronifying&amp;rdquo; or better stated &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application.
-I have created a sample of &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application at &lt;a href=&#34;https://github.com/donbstringham/php-daemon&#34;&gt;https://github.com/donbstringham/php-daemon&lt;/a&gt;.
-This example is based on an article by &lt;a href=&#34;http://blog.bobbyallen.me/2014/06/02/how-to-create-a-php-linux-daemon-service/&#34;&gt;Bobby Allen&lt;/a&gt;.
-Follow the directions below and now you have a linux system daemon that is actually a
-PHP command-line application.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/donbstringham/php-daemon/blob/master/php-daemon.conf&#34;&gt;php-daemon.conf&lt;/a&gt; - Place in the directory &lt;code&gt;/etc/init&lt;/code&gt;.  On line 9 in use the &lt;strong&gt;full path&lt;/strong&gt; to the PHP file.  It is &lt;strong&gt;very&lt;/strong&gt; important to use &lt;em&gt;fully qualified paths&lt;/em&gt; in both the &lt;a href=&#34;http://upstart.ubuntu.com/&#34;&gt;Upstart&lt;/a&gt; configuration file as well as any script files that &lt;a href=&#34;http://upstart.ubuntu.com/&#34;&gt;Upstart&lt;/a&gt; daemonizes.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/donbstringham/php-daemon/blob/master/php-daemon.php&#34;&gt;php-daemon.php&lt;/a&gt; - Place in any directory you want.  Remember it to use &lt;em&gt;fully qualified paths&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Use the commands below to start, stop and view the status of the new linux daemon:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo status php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo start php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo stop php-daemon
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; While implementing this on CENTOS/RHEL boxes a few minor changes where needed to get it run in a stable manner.  The main change was to run the daemons under the &lt;code&gt;root&lt;/code&gt; user.  Other changes are listed below in the code:&lt;/p&gt;
-
-&lt;h5 id=&#34;etc-init-php-daemon-conf&#34;&gt;/etc/init/php-daemon.conf&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;start on startup
-stop on shutdown
-respawn
-
-script
-    echo &amp;quot;DEBUG: `set`&amp;quot; &amp;gt; /root/php-daemon-env.log
-
-    /root/php-daemon
-end script
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;home-stringhamdb-php-daemon&#34;&gt;/home/stringhamdb/php-daemon&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;#!/usr/bin/php
-&amp;lt;?php
-// The worker will execute every X seconds:
-$seconds = 1;
-
-// We work out the micro seconds ready to be used by the &#39;usleep&#39; function.
-$micro = $seconds * 1000000;
-
-while (true) {
-  // This is the code you want to loop during the service...
-  $fh = fopen(&#39;/root/php-daemon.log&#39;, &#39;a&#39;) or die(&#39;Can not open file&#39;);
-  $stringData = &#39;File updated at: &#39;.time().PHP_EOL;
-  fwrite($fh, $stringData);
-  fclose($fh);
-  // Now before we &#39;cycle&#39; again, we&#39;ll sleep for a bit...
-  usleep($micro);
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-01-13-linux-php-daemon/</guid>
+      <description>Better than a crontab!
+Many a time have my development team needed to &amp;ldquo;cronify&amp;rdquo; a PHP script for completing business logic quietly behind the scenes. Once the command-line (CLI) version of the application was complete they would start creating and managing a crontab. This practice is NO MORE for my development teams!
+Enter a better way of &amp;ldquo;cronifying&amp;rdquo; or better stated &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application. I have created a sample of &amp;ldquo;daemonizing&amp;rdquo; a PHP CLI application at https://github.</description>
     </item>
     
   </channel>

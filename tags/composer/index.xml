@@ -1,61 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>donbstringham</title>
-    <link>http://donbstringham.us/tags/composer/index.xml</link>
-    <description>Recent content on donbstringham</description>
+    <title>Composer on donbstringham</title>
+    <link>http://donbstringham.us/tags/composer/</link>
+    <description>Recent content in Composer on donbstringham</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://donbstringham.us/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 30 Mar 2015 09:05:00 -0700</lastBuildDate>
+    
+	<atom:link href="http://donbstringham.us/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Composer Autoloading</title>
-      <link>http://donbstringham.us/blog/2015-03-30-composer-autoloading/</link>
+      <link>http://donbstringham.us/post/2015-03-31-composer-autoloading/</link>
       <pubDate>Mon, 30 Mar 2015 09:05:00 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-30-composer-autoloading/</guid>
-      <description>&lt;p&gt;*Composer &lt;strong&gt;Autoloading&lt;/strong&gt; Not Just for Vendor Files*&lt;/p&gt;
-
-&lt;p&gt;Teacher can and should learn from students!  That is one of the things I find very satisfying about being an adjunct professor at Weber State University.  The fact that I can learn new and usual things from those I teach.  Last night was one of those times.&lt;/p&gt;
-
-&lt;p&gt;In fielding questions about a PHP project a comment came up about multiple autoloaders.  In the first project I had the students create their own autoloader.  This project I required them to use composer to manage and load dependencies.  One student mentioned he had found how to use the composer autoloader to load his classes.  Now I had known in the past that composer supported &lt;a href=&#34;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md&#34;&gt;PSR-0&lt;/a&gt; but didn&amp;rsquo;t fully understand it.    So to my surprise I learned that composer now supports &lt;a href=&#34;https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md&#34;&gt;PSR-4&lt;/a&gt; and is very easy to use.  Here is a code snippet of the a portion of the &lt;code&gt;composer.json&lt;/code&gt; file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;quot;autoload&amp;quot;: {
-	&amp;quot;psr-4&amp;quot;: {
-		&amp;quot;Common\\&amp;quot;: &amp;quot;src/Common/&amp;quot;,
-        &amp;quot;Domain\\&amp;quot;: &amp;quot;src/Domain/&amp;quot;
-   }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then to use the autoloader and namespaces in code you would use a PHP statement like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;require_once __DIR__.&#39;/vendor/autoload.php&#39;;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To optimized the autoloader you can use this command: &lt;code&gt;composer dumpautoload -o&lt;/code&gt;.  There is a downside to this, though.  You will need to re-run this every time a new class is added, in addition to whenever the composer &lt;code&gt;install&lt;/code&gt; or &lt;code&gt;update&lt;/code&gt; commands are used.  Needless to say this is a small price to pay for roughly a 40% performance increase.&lt;/p&gt;
-
-&lt;p&gt;This is another great usage of composer.  A tool PHP developers should be using a lot more.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://getcomposer.org/doc/04-schema.md&#34;&gt;Composer JSON Schema&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jessesnet.com/development-notes/2014/php-composer-autoloading/&#34;&gt;PHP Composer Autoloading&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://mouf-php.com/optimizing-composer-autoloader-performance&#34;&gt;Optimizing Composer&amp;rsquo;s autoloader performance&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-31-composer-autoloading/</guid>
+      <description>*Composer Autoloading Not Just for Vendor Files*
+Teacher can and should learn from students! That is one of the things I find very satisfying about being an adjunct professor at Weber State University. The fact that I can learn new and usual things from those I teach. Last night was one of those times.
+In fielding questions about a PHP project a comment came up about multiple autoloaders. In the first project I had the students create their own autoloader.</description>
     </item>
     
     <item>
       <title>Implementing Satis</title>
-      <link>http://donbstringham.us/blog/2015-03-12-implementing-satis/</link>
+      <link>http://donbstringham.us/post/2015-03-12-implementing-satis/</link>
       <pubDate>Thu, 12 Mar 2015 09:05:00 -0700</pubDate>
       
-      <guid>http://donbstringham.us/blog/2015-03-12-implementing-satis/</guid>
-      <description>&lt;p&gt;Implementing a local Packagist with &lt;strong&gt;Satis&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Many large companies, including the one I am currently working for &lt;a href=&#34;http://familysearch.org&#34;&gt;FamilySearch, Intl.&lt;/a&gt;, operate many servers that do not have connectivity to the internet at large.  In other words, they cannot reach &lt;a href=&#34;https://packagist.org/&#34;&gt;Packagist&lt;/a&gt; rendering using &lt;a href=&#34;https://getcomposer.org&#34;&gt;composer&lt;/a&gt; useless.  Luckily, the developers at &lt;em&gt;composer&lt;/em&gt; have provided a solution to the above problem, &lt;a href=&#34;https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md&#34;&gt;private packages&lt;/a&gt;.  I had been using &lt;em&gt;composer&lt;/em&gt; for awhile but was un-aware of &lt;strong&gt;Satis&lt;/strong&gt; or &lt;strong&gt;Toran Proxy&lt;/strong&gt; until I attend Rafael Dohms &lt;a href=&#34;http://www.slideshare.net/rdohms/composer-the-right-way&#34;&gt;Composer: The Right Way&lt;/a&gt; at php[world] 2014 in Washington, D.C.  It took a couple of months of getting priorities off my plate but here is what I have learned implementing Satis for the EMS 2.x (Event Management System) for ICS.&lt;/p&gt;
-</description>
+      <guid>http://donbstringham.us/post/2015-03-12-implementing-satis/</guid>
+      <description>Implementing a local Packagist with Satis
+Many large companies, including the one I am currently working for FamilySearch, Intl., operate many servers that do not have connectivity to the internet at large. In other words, they cannot reach Packagist rendering using composer useless. Luckily, the developers at composer have provided a solution to the above problem, private packages. I had been using composer for awhile but was un-aware of Satis or Toran Proxy until I attend Rafael Dohms Composer: The Right Way at php[world] 2014 in Washington, D.</description>
     </item>
     
   </channel>
