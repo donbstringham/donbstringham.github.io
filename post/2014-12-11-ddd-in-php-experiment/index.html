@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Domain Driven Design in PHP Experiment and Seed">
+  <meta name="generator" content="Hugo 0.21" />
+
+  <title>DDD in PHP Experiment &middot; donbstringham</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://donbstringham.us/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://donbstringham.us/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://donbstringham.us/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://donbstringham.us/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://donbstringham.us/">darkmist</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://donbstringham.us/resume/"><i class='fa fa-newspaper-o fa-fw'></i>Resume</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/donbstringham" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>DDD in PHP Experiment</h1>
+  <h2>Domain Driven Design in PHP Experiment and Seed</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>11 Dec 2014, 12:52</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://donbstringham.us/tags/ddd">ddd</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://donbstringham.us/tags/php">php</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://donbstringham.us/tags/patterns">patterns</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Domain-Driven Design in PHP Experiment and Project Seed</p>
+
+<p>A current and difficult software development project has recently sent me scurrying for answers.  In that search I&rsquo;ve rediscovered the book <a href="http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=sr_1_1?ie=UTF8&amp;qid=1418357436&amp;sr=8-1&amp;keywords=domain+driven+design">Domain-Driven Design: Tackling Complexity in the Heart of Software</a> by Eric Evans.  In addition to re-reading the book and reviewing a handful of slide-decks at <a href="http://www.slideshare.net/">SlideShare</a>; I have found that there a few different and even wide varying implementations of the principles of domain-driven design.  So I have started a <a href="https://github.com/stringhamdb/d3x">Github project</a> to test out the implementation differences.</p>
+
+<ul>
+<li><p>First, I am looking at the differences in the persistence and database access (DBAL) components in the infrastructure layer.</p>
+
+<ul>
+<li>For example one question that needs to be answered is should a DataMapper reside in the Domain or Infrastructure layer.</li>
+<li>Another is should the DataMapper be implemented following the pattern religiously or with application specific variations.</li>
+<li>Is it really a DataMapper or is it better called a DomainMapper that then uses TableDataGateways and RowDataGateways to read from persistence storage?</li>
+<li>Is there a DataMapper class in the infrastructure layer that communicates with the DomainMapper in the domain layer?  That these two objects can pull from multiple tables using SQL and create a single entity or a single aggregate entity.</li>
+</ul></li>
+
+<li><p>Second, I am looking at the differences in how domain classes versus infrastructure classes are constructed via factories.</p>
+
+<ul>
+<li>Which factory pattern is a best practice?</li>
+<li>If the factory method pattern is the best practice should it be implemented religiously or with variations?</li>
+</ul></li>
+
+<li><p>Thirdly, where can I use things like <code>memcached</code> or an op-code cache to improve the performance of large data sets.</p>
+
+<ul>
+<li>Data sets such as a repository might easily grow beyond a thousand aggregate  root entities with maybe over tens times that in regular entities.</li>
+<li>Large data sets could easily cause the database syndrome known as &lsquo;death by a thousand cuts&rsquo; meaning that a repository during a load process could easily ask the infrastructure layer to make a lot of database calls bringing the server to it&rsquo;s knees.</li>
+</ul></li>
+</ul>
+
+<p>Anyways, it should turn into a great learning experience.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://donbstringham.us/post/2014-12-08-semantic-versioning/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://donbstringham.us/post/2014-12-08-semantic-versioning/">Semantic Versioning</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://donbstringham.us/post/2014-12-17-personal-cdn-for-free/">Personal CDN for Free</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://donbstringham.us/post/2014-12-17-personal-cdn-for-free/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="http://donbstringham.us/js/ui.js"></script>
+
+
+
+
+</body>
+</html>
+
