@@ -3,248 +3,243 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://donbstringham.us/post/2016-10-16-why-i-switched-to-go/</loc>
+    <loc>https://localhost:1313/post/2016-10-16-why-i-switched-to-go/</loc>
     <lastmod>2016-10-16T14:31:00-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2016-06-05-dev-with-docker/</loc>
+    <loc>https://localhost:1313/post/2016-06-05-dev-with-docker/</loc>
     <lastmod>2016-06-05T19:35:16-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/contact/</loc>
+    <loc>https://localhost:1313/contact/</loc>
     <lastmod>2016-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-05-21-code-climate/</loc>
+    <loc>https://localhost:1313/post/2015-05-21-code-climate/</loc>
     <lastmod>2015-05-21T11:10:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-04-23-different-programming-modes/</loc>
+    <loc>https://localhost:1313/post/2015-04-23-different-programming-modes/</loc>
     <lastmod>2015-04-23T15:10:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-04-22-php-pdo-oci/</loc>
+    <loc>https://localhost:1313/post/2015-04-22-php-pdo-oci/</loc>
     <lastmod>2015-04-22T11:10:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-04-21-building-a-phar/</loc>
+    <loc>https://localhost:1313/post/2015-04-21-building-a-phar/</loc>
     <lastmod>2015-04-21T11:10:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-04-17-phar-and-file/</loc>
+    <loc>https://localhost:1313/post/2015-04-17-phar-and-file/</loc>
     <lastmod>2015-04-17T21:10:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-04-17-refactoring-to-microservices/</loc>
+    <loc>https://localhost:1313/post/2015-04-17-refactoring-to-microservices/</loc>
     <lastmod>2015-04-17T11:10:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/about/</loc>
+    <loc>https://localhost:1313/about/</loc>
     <lastmod>2015-04-07T14:34:48-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/bookshelf/</loc>
+    <loc>https://localhost:1313/resume/</loc>
     <lastmod>2015-04-07T14:34:48-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/resume/</loc>
-    <lastmod>2015-04-07T14:34:48-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://donbstringham.us/post/2015-03-31-composer-autoloading/</loc>
+    <loc>https://localhost:1313/post/2015-03-31-composer-autoloading/</loc>
     <lastmod>2015-03-30T09:05:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-03-12-implementing-satis/</loc>
+    <loc>https://localhost:1313/post/2015-03-12-implementing-satis/</loc>
     <lastmod>2015-03-12T09:05:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-03-09-optimizing-realpath_cache/</loc>
+    <loc>https://localhost:1313/post/2015-03-09-optimizing-realpath_cache/</loc>
     <lastmod>2015-03-09T09:05:49-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-03-06-html-signatures-in-apple-mail/</loc>
+    <loc>https://localhost:1313/post/2015-03-06-html-signatures-in-apple-mail/</loc>
     <lastmod>2015-03-06T17:50:49-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2015-01-13-linux-php-daemon/</loc>
+    <loc>https://localhost:1313/post/2015-01-13-linux-php-daemon/</loc>
     <lastmod>2015-01-13T17:50:49-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2014-12-23-service-locator-vs-dependency-injection-container/</loc>
+    <loc>https://localhost:1313/post/2014-12-23-service-locator-vs-dependency-injection-container/</loc>
     <lastmod>2014-12-23T22:47:30-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2014-12-17-personal-cdn-for-free/</loc>
+    <loc>https://localhost:1313/post/2014-12-17-personal-cdn-for-free/</loc>
     <lastmod>2014-12-17T16:56:24-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2014-12-11-ddd-in-php-experiment/</loc>
+    <loc>https://localhost:1313/post/2014-12-11-ddd-in-php-experiment/</loc>
     <lastmod>2014-12-11T12:52:29-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/2014-12-08-semantic-versioning/</loc>
+    <loc>https://localhost:1313/post/2014-12-08-semantic-versioning/</loc>
     <lastmod>2014-12-08T11:10:52-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/cdn/</loc>
+    <loc>https://localhost:1313/tags/cdn/</loc>
     <lastmod>2014-12-17T16:56:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/code/</loc>
+    <loc>https://localhost:1313/tags/code/</loc>
     <lastmod>2015-05-21T11:10:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/composer/</loc>
+    <loc>https://localhost:1313/tags/composer/</loc>
     <lastmod>2015-03-30T09:05:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/</loc>
-    <lastmod>2016-10-16T14:31:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://donbstringham.us/tags/ddd/</loc>
+    <loc>https://localhost:1313/tags/ddd/</loc>
     <lastmod>2014-12-11T12:52:29-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/dev/</loc>
+    <loc>https://localhost:1313/tags/dev/</loc>
     <lastmod>2016-10-16T14:31:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/email/</loc>
+    <loc>https://localhost:1313/tags/email/</loc>
     <lastmod>2015-03-06T17:50:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/google/</loc>
+    <loc>https://localhost:1313/tags/google/</loc>
     <lastmod>2014-12-17T16:56:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/html/</loc>
+    <loc>https://localhost:1313/tags/html/</loc>
     <lastmod>2015-03-06T17:50:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/info/</loc>
+    <loc>https://localhost:1313/tags/info/</loc>
     <lastmod>2015-04-07T14:34:48-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/license/</loc>
+    <loc>https://localhost:1313/license/</loc>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/linux/</loc>
+    <loc>https://localhost:1313/tags/linux/</loc>
     <lastmod>2015-01-13T17:50:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/mac/</loc>
+    <loc>https://localhost:1313/tags/mac/</loc>
     <lastmod>2015-03-06T17:50:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/oci/</loc>
+    <loc>https://localhost:1313/tags/oci/</loc>
     <lastmod>2015-04-22T11:10:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/oracle/</loc>
+    <loc>https://localhost:1313/tags/oracle/</loc>
     <lastmod>2015-04-22T11:10:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/patterns/</loc>
+    <loc>https://localhost:1313/tags/patterns/</loc>
     <lastmod>2014-12-23T22:47:30-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/pdo/</loc>
+    <loc>https://localhost:1313/tags/pdo/</loc>
     <lastmod>2015-04-22T11:10:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/phar/</loc>
+    <loc>https://localhost:1313/tags/phar/</loc>
     <lastmod>2015-04-21T11:10:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/php/</loc>
+    <loc>https://localhost:1313/tags/php/</loc>
     <lastmod>2015-04-22T11:10:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/post/</loc>
+    <loc>https://localhost:1313/post/</loc>
     <lastmod>2016-10-16T14:31:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/tagging/</loc>
+    <loc>https://localhost:1313/tags/tagging/</loc>
     <lastmod>2015-04-17T11:10:52-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/</loc>
+    <loc>https://localhost:1313/tags/</loc>
     <lastmod>2014-12-17T16:56:24-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/topics/</loc>
+    <loc>https://localhost:1313/topics/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://donbstringham.us/tags/web/</loc>
+    <loc>https://localhost:1313/tags/web/</loc>
     <lastmod>2014-12-17T16:56:24-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://localhost:1313/</loc>
+    <lastmod>2016-10-16T14:31:00-06:00</lastmod>
     <priority>0</priority>
   </url>
   
